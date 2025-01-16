@@ -1,0 +1,185 @@
+//
+//  Base.xcconfig
+//  MacRhino
+//
+//  Created by Marlin Prowell on 10/9/09.
+//  Copyright 2009 Robert McNeel & Associates. All rights reserved.
+//
+
+
+// =======================================================================================
+// Settings common to all Rhino for Mac builds
+// =======================================================================================
+
+//MAJOR_VERSION = 8
+//MARKETING_VERSION = $(MAJOR_VERSION) Internal
+SDKROOT = macosx
+MACOSX_DEPLOYMENT_TARGET = 12.4
+//PRODUCT_BUNDLE_IDENTIFIER = com.mcneel.rhinoceros.$(MAJOR_VERSION)
+//Versions 5 and 6 were: PRODUCT_BUNDLE_IDENTIFIER = com.mcneel.rhinoceros.$(PRODUCT_NAME:rfc1034identifier)
+
+// exclude obj and bin directories (.NET artifacts) from native dependency resolution
+EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = *.nib *.lproj *.framework *.gch *.xcode* (*) .DS_Store CVS .svn .git .hg obj bin
+
+// Enable/Disable Automatic Reference Counting
+CLANG_ENABLE_OBJC_ARC = YES
+
+// Use C++14 language dialect
+CLANG_CXX_LANGUAGE_STANDARD = c++14
+
+// Use Clang's libc++ with the C11 std library
+//CLANG_CXX_LIBRARY = libc++
+
+// Use Apple Clang 3.0 in Xcode 4.x
+//GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+
+// Compile everything as Objective-C++.
+// This allows Objective C code to be inserted anywhere in Rhino.
+GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp
+
+GCC_SYMBOLS_PRIVATE_EXTERN = NO
+KEEP_PRIVATE_EXTERNS = NO
+GCC_INLINES_ARE_PRIVATE_EXTERN = YES
+
+GCC_NO_COMMON_BLOCKS = YES
+
+// Always use search path for "stdafx.h" (and all other unadorned include files)
+USE_HEADERMAP = NO
+
+//GCC_PRECOMPILE_PREFIX_HEADER = YES
+
+
+// =======================================================================================
+// WARNINGS: Enabled
+// =======================================================================================
+
+// Warn when return value is missing
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR
+
+// warn when two methods have the same name
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
+
+// Warn about loop bodies that are suspiciously empty. 
+CLANG_WARN_EMPTY_BODY = YES
+
+// Warn about implicit conversions to boolean values that are suspicious. 
+// For example, writing 'if (foo)' with 'foo' being the name a function will trigger 
+// a warning.
+CLANG_WARN_BOOL_CONVERSION = YES
+
+// Warn about implicit conversions of constant values that cause the constant value to 
+// change, either through a loss of precision, or entirely in its meaning.  
+CLANG_WARN_CONSTANT_CONVERSION = YES
+
+// Warn about implicit conversions between different kinds of enum values.
+// For example, this can catch issues when using the wrong enum flag as an argument to a 
+// function or method. 
+CLANG_WARN_ENUM_CONVERSION = YES
+
+// Warn about implicit conversions between pointers and integers.
+// For example, this can catch issues when one incorrectly intermixes using NSNumber*'s 
+// and raw integers. 
+CLANG_WARN_INT_CONVERSION = YES
+
+// Warn if a variable might be clobbered by a setjmp call or if an automatic variable is 
+// used without prior initialization.
+GCC_WARN_UNINITIALIZED_AUTOS = YES
+
+// Warn if a "@selector(...)" expression referring to an undeclared selector is found.
+GCC_WARN_UNDECLARED_SELECTOR = YES
+
+// Warns about potentially unreachable code.
+CLANG_WARN_UNREACHABLE_CODE = YES
+
+// Controls whether objc_msgSend calls must be cast to the appropriate function pointer 
+// type before being called. 
+ENABLE_STRICT_OBJC_MSGSEND = YES
+
+// "&& within ||" warnings
+// NOTE: For gslib and Reconlib, these are suppressed LibThirdParty.xcconfig
+GCC_WARN_MISSING_PARENTHESES = YES
+
+// Possible misuse of comma warnings
+CLANG_WARN_COMMA = YES
+
+// "enumeration values not handled" warnings
+GCC_WARN_CHECK_SWITCH_STATEMENTS = YES
+
+// =======================================================================================
+// WARNINGS: Disabled
+// This set of warnings is turned off because they produce hundreds of warnings in Rhino
+// =======================================================================================
+
+// Do not warn if a value is implicitly converted from a 64 bit type to a 32 bit type. 
+// This is a subset of the warnings provided by -Wconversion. 
+// Produces hundreds of warnings
+GCC_WARN_64_TO_32_BIT_CONVERSION = NO
+
+// NOTE: Some projects override these at the project-level, like RhCore.xcodeproj
+GCC_WARN_UNUSED_VARIABLE = NO
+GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO
+GCC_WARN_UNUSED_FUNCTION = NO
+
+// Turn this off.  Combining HiDPI images changes .png files into .tiff files
+COMBINE_HIDPI_IMAGES = NO
+
+// Suppress OpenGL deprecation warning
+// see https://mcneel.myjetbrains.com/youtrack/issue/RH-69060
+VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGL
+
+// NOTE: Some of these are NOT added to OTHER_CFLAGS as they are being selectively re-enabled in this project
+// -Wpartial-availability DO warn about methods available in some but not all of the supported versions of macOS
+// -Wno-tautological-compare eliminates many warnings like "comparison of unsigned expression < 0 is always false"
+// -Wno-inconsistent-missing-override eliminates many warnings like "XXX overrides a member function but is not marked 'override'"
+// -Wno-nonportable-include-path ignores case-mismatch in include file statements
+// -Wno-deprecated-register ignores 'register' keyword
+// -Wno-documentation-deprecated-sync ignores declaration is marked with deprecated command but does not have a deprecation attribute
+// -Wno-pch-date-time ignores use of __DATE__ or __TIME__ in precompiled header
+// -Wno-absolute-value ignores warning: using integer absolute value function 'abs' when argument is of floating point type
+// -Wno-deprecated-declarations ignores RDK_DEPRECATED and other deprecated warnings
+// -Wno-ignored-attributes ignores RDK header issue: attribute 'deprecated' is ignored, place it after "enum" to apply attribute to type declaration
+// -Wno-undefined-bool-conversion suppresses warning: 'this' pointer cannot be null in well-defined C++ code; pointer may be assumed to always convert to true
+// -Wno-dynamic-class-memaccess suppresses important warning: destination for this 'memcpy' call is a pointer to dynamic class 'XXXXX'; vtable pointer will be overwritten
+// -Wno-defaulted-function-deleted suppresses 1000 warnings "warning: explicitly defaulted copy constructor is implicitly deleted"
+// -Wno-#pragma-messages prevents #pragma messages from generating compiler warnings
+// -fno-operator-names prevents 'or' from being a reserved word
+// GL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED  Ignore warning that both OpenGL/gl3.h and OpenGL/gl.h are included
+
+OTHER_CFLAGS = $(inherited) -Wpartial-availability -Wno-nonportable-include-path -Wno-deprecated-register -Wno-pch-date-time -Wno-deprecated-declarations -Wno-documentation-deprecated-sync -Wno-ignored-attributes -Wno-undefined-bool-conversion -Wno-dynamic-class-memaccess -Wno-defaulted-function-deleted -Wno-#pragma-messages -fno-operator-names -DGL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED
+
+// In addition, OTHER_CFLAGS was modified in specific projects to suppress a large 
+// number of warnings specific to those projects
+// -Wno-format added to tl, gslib, and 3DSLib
+// -Wno-missing-prototypes added to 3DSLib
+// -Wno-deprecated-builtins added to export_USD
+
+
+// =======================================================================================
+// Xcode recommendations: these build settings are those proposed during updates to Xcode
+// =======================================================================================
+
+// Xcode 9 recommendations
+CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
+CLANG_WARN_SUSPICIOUS_MOVE = YES
+
+// These Xcode 9 recommendations generate lots of errors, so they are turned off
+CLANG_WARN_INFINITE_RECURSION = NO
+CLANG_WARN_STRICT_PROTOTYPES = NO
+
+// Xcode 10 recommendations
+ALWAYS_SEARCH_USER_PATHS = NO
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES
+
+// Xcode 11 recommendations
+ENABLE_TESTABILITY = YES
+
+// Xcode 12 recommendations
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES
+
+
+

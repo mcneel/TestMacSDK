@@ -1,0 +1,25 @@
+//
+//  Plugin.xcconfig
+//  MacRhino
+//
+//  Created by Marlin Prowell on 10/9/09.
+//  Copyright 2009 Robert McNeel & Associates. All rights reserved.
+//
+
+// Settings common to Plug-Ins builds
+
+WRAPPER_EXTENSION = rhp
+SKIP_INSTALL = YES
+//GCC_PREFIX_HEADER = $(PROJECT_DIR)/RhinoPlugIn.pch
+
+// Define the OpenDesign directory to use in big_libs/OpenDesign
+//OPENDESIGN_VERSION = 4.03.01_Production
+
+// Default info.plist location
+//INFOPLIST_FILE = Info.plist
+
+// list $(PROJECT_DIR) first so we find "stdafx.h" in project directory
+//USER_HEADER_SEARCH_PATHS = $(PROJECT_DIR) $(PROJECT_DIR)/** $(inherited) $(PROJECT_DIR)/../../MacOS $(PROJECT_DIR)/../../MacOS/dialogs/** $(PROJECT_DIR)/../../MacOS/AdapterClasses
+
+// Always use search path for "stdafx.h" (and all other unadorned include files)
+USE_HEADERMAP = NO

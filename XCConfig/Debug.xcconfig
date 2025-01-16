@@ -1,0 +1,23 @@
+//
+//  Debug.xcconfig
+//  MacRhino
+//
+//  Created by Marlin Prowell on 10/9/09.
+//  Copyright 2009 Robert McNeel & Associates. All rights reserved.
+//
+
+// Settings for Debug builds
+
+COPY_PHASE_STRIP = NO
+DEBUG_INFORMATION_FORMAT = dwarf
+GCC_OPTIMIZATION_LEVEL = 0
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) ON_COMPILER_CLANG ON_RUNTIME_APPLE RHINO_APPLE=1 _DEBUG=1 _GNU_SOURCE MY_ZCALLOC Z_PREFIX ON__DEBUG _UNICODE RHINO_V6_READY RHINO_THIRD_PARTY_OSX_PLUGIN_COMPILE
+
+// Xcode recommendation
+ENABLE_TESTABILITY = YES
+ONLY_ACTIVE_ARCH = YES
+
+// Code Signing
+CODE_SIGN_STYLE = Manual
+DEVELOPMENT_TEAM = D6XDM4N99E
+CODE_SIGN_IDENTITY = -

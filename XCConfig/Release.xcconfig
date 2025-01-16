@@ -1,0 +1,36 @@
+//
+//  Release.xcconfig
+//  MacRhino
+//
+//  Created by Marlin Prowell on 10/9/09.
+//  Copyright 2009 Robert McNeel & Associates. All rights reserved.
+//
+
+// Settings for Release builds
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) ON_COMPILER_CLANG ON_RUNTIME_APPLE RHINO_APPLE=1 _GNU_SOURCE MY_ZCALLOC Z_PREFIX NDEBUG=1 _UNICODE RHINO_V6_READY RHINO_THIRD_PARTY_OSX_PLUGIN_COMPILE
+GCC_OPTIMIZATION_LEVEL = s
+STRIP_STYLE = debugging
+STRIP_INSTALLED_PRODUCT = YES
+DEPLOYMENT_POSTPROCESSING = YES
+
+// Specifies whether binary files that are copied during the build, such as in a Copy Bundle Resources or Copy Files build phase,
+// should be stripped of debugging symbols. 
+// It does not cause the linked product of a target to be stripped—use Strip Linked Product (STRIP_INSTALLED_PRODUCT) for that.
+// Disabling this suppresses the many warnings like this:
+// warning: skipping copy phase strip, binary is code signed
+COPY_PHASE_STRIP = NO
+
+// Code Signing
+//CODE_SIGN_STYLE = Manual
+//DEVELOPMENT_TEAM = D6XDM4N99E
+//CODE_SIGN_IDENTITY = -
+
+// See: https://mcneel.myjetbrains.com/youtrack/issue/RH-67806
+// This line:
+// EXCLUDED_ARCHS[config=Release] = x86_64
+// is here to exclude Intel (x86_64) builds from Pull Requests.
+// If you need to build in Release for Intel, you can comment out this line, but do not commit
+// that change or PRs will slow down again...
+// See also Distribution.xcconfig which clears this variable for Distribution as well as:
