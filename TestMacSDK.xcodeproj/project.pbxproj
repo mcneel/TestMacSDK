@@ -1,0 +1,1578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A18248732CEBAFB900C49673 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A182486C2CEBAFB800C49673 /* LICENSE.txt */; };
+		A182487F2CED039F00C49673 /* OpenNURBS in Frameworks */ = {isa = PBXBuildFile; fileRef = A188FF182CEB7123008BBC7D /* OpenNURBS */; };
+		A18248812CED039F00C49673 /* RhCore in Frameworks */ = {isa = PBXBuildFile; fileRef = A188FF172CEB7123008BBC7D /* RhCore */; };
+		A18248832CED039F00C49673 /* RhMaterialEditor in Frameworks */ = {isa = PBXBuildFile; fileRef = A188FF162CEB7123008BBC7D /* RhMaterialEditor */; };
+		A188FF0B2CEB70A5008BBC7D /* TestMacSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A188FF0A2CEB70A5008BBC7D /* TestMacSDK.cpp */; };
+		A188FF112CEB70BA008BBC7D /* Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A188FF0C2CEB70BA008BBC7D /* Base.xcconfig */; };
+		A188FF122CEB70BA008BBC7D /* Plugin.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A188FF0D2CEB70BA008BBC7D /* Plugin.xcconfig */; };
+		A188FF132CEB70BA008BBC7D /* PluginRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A188FF0E2CEB70BA008BBC7D /* PluginRelease.xcconfig */; };
+		A188FF142CEB70BA008BBC7D /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A188FF0F2CEB70BA008BBC7D /* Release.xcconfig */; };
+		A188FF212CEB7340008BBC7D /* PluginDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A188FF202CEB7340008BBC7D /* PluginDebug.xcconfig */; };
+		A188FF232CEB739C008BBC7D /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A188FF222CEB739B008BBC7D /* Debug.xcconfig */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A18246202CEBAFB800C49673 /* IAutoUIExtraRequirements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAutoUIExtraRequirements.h; sourceTree = "<group>"; };
+		A18246212CEBAFB800C49673 /* IRhRdk_XMLSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdk_XMLSection.h; sourceTree = "<group>"; };
+		A18246222CEBAFB800C49673 /* IRhRdkColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkColorPicker.h; sourceTree = "<group>"; };
+		A18246232CEBAFB800C49673 /* IRhRdkContentEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkContentEditor.h; sourceTree = "<group>"; };
+		A18246242CEBAFB800C49673 /* IRhRdkContentFactories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkContentFactories.h; sourceTree = "<group>"; };
+		A18246252CEBAFB800C49673 /* IRhRdkContentIOPlugIns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkContentIOPlugIns.h; sourceTree = "<group>"; };
+		A18246262CEBAFB800C49673 /* IRhRdkContentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkContentList.h; sourceTree = "<group>"; };
+		A18246272CEBAFB800C49673 /* IRhRdkContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkContents.h; sourceTree = "<group>"; };
+		A18246282CEBAFB800C49673 /* IRhRdkContentUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkContentUI.h; sourceTree = "<group>"; };
+		A18246292CEBAFB800C49673 /* IRhRdkCurrentEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkCurrentEnvironment.h; sourceTree = "<group>"; };
+		A182462A2CEBAFB800C49673 /* IRhRdkCustomRenderMeshes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkCustomRenderMeshes.h; sourceTree = "<group>"; };
+		A182462B2CEBAFB800C49673 /* IRhRdkCustomRenderMeshManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkCustomRenderMeshManager.h; sourceTree = "<group>"; };
+		A182462C2CEBAFB800C49673 /* IRhRdkDecal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkDecal.h; sourceTree = "<group>"; };
+		A182462D2CEBAFB800C49673 /* IRhRdkDecalSupportPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkDecalSupportPlugIn.h; sourceTree = "<group>"; };
+		A182462E2CEBAFB800C49673 /* IRhRdkDithering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkDithering.h; sourceTree = "<group>"; };
+		A182462F2CEBAFB800C49673 /* IRhRdkGroundPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkGroundPlane.h; sourceTree = "<group>"; };
+		A18246302CEBAFB800C49673 /* IRhRdkGroundPlaneSupportPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkGroundPlaneSupportPlugIn.h; sourceTree = "<group>"; };
+		A18246312CEBAFB800C49673 /* IRhRdkHeaderButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkHeaderButtonHandler.h; sourceTree = "<group>"; };
+		A18246322CEBAFB800C49673 /* IRhRdkLinearWorkflow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkLinearWorkflow.h; sourceTree = "<group>"; };
+		A18246332CEBAFB800C49673 /* IRhRdkMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkMenu.h; sourceTree = "<group>"; };
+		A18246342CEBAFB800C49673 /* IRhRdkParamTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkParamTransport.h; sourceTree = "<group>"; };
+		A18246352CEBAFB800C49673 /* IRhRdkPostEffectImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkPostEffectImage.h; sourceTree = "<group>"; };
+		A18246362CEBAFB800C49673 /* IRhRdkPostEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkPostEffects.h; sourceTree = "<group>"; };
+		A18246372CEBAFB800C49673 /* IRhRdkPreviewSceneServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkPreviewSceneServer.h; sourceTree = "<group>"; };
+		A18246382CEBAFB800C49673 /* IRhRdkRenderChannels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkRenderChannels.h; sourceTree = "<group>"; };
+		A18246392CEBAFB800C49673 /* IRhRdkRenderWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkRenderWindow.h; sourceTree = "<group>"; };
+		A182463A2CEBAFB800C49673 /* IRhRdkSafeFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkSafeFrame.h; sourceTree = "<group>"; };
+		A182463B2CEBAFB800C49673 /* IRhRdkSectionHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkSectionHolder.h; sourceTree = "<group>"; };
+		A182463C2CEBAFB800C49673 /* IRhRdkSkylight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkSkylight.h; sourceTree = "<group>"; };
+		A182463D2CEBAFB800C49673 /* IRhRdkSun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkSun.h; sourceTree = "<group>"; };
+		A182463E2CEBAFB800C49673 /* IRhRdkTextureEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkTextureEvaluator.h; sourceTree = "<group>"; };
+		A182463F2CEBAFB800C49673 /* IRhRdkToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRhRdkToolbar.h; sourceTree = "<group>"; };
+		A18246402CEBAFB800C49673 /* Proto_ON_Environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Proto_ON_Environment.h; sourceTree = "<group>"; };
+		A18246412CEBAFB800C49673 /* rhinoSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdk.h; sourceTree = "<group>"; };
+		A18246422CEBAFB800C49673 /* rhinoSdkAnalysisModes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkAnalysisModes.h; sourceTree = "<group>"; };
+		A18246432CEBAFB800C49673 /* rhinoSdkAnnotationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkAnnotationObject.h; sourceTree = "<group>"; };
+		A18246442CEBAFB800C49673 /* rhinoSdkApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkApp.h; sourceTree = "<group>"; };
+		A18246452CEBAFB800C49673 /* rhinoSdkAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkAppSettings.h; sourceTree = "<group>"; };
+		A18246462CEBAFB800C49673 /* rhinoSdkBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkBitmap.h; sourceTree = "<group>"; };
+		A18246472CEBAFB800C49673 /* RhinoSdkBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkBlend.h; sourceTree = "<group>"; };
+		A18246482CEBAFB800C49673 /* rhinoSdkBrepObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkBrepObject.h; sourceTree = "<group>"; };
+		A18246492CEBAFB800C49673 /* rhinoSdkCageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkCageObject.h; sourceTree = "<group>"; };
+		A182464A2CEBAFB800C49673 /* rhinoSdkChannelAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkChannelAttributes.h; sourceTree = "<group>"; };
+		A182464B2CEBAFB800C49673 /* rhinoSdkChecks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkChecks.h; sourceTree = "<group>"; };
+		A182464C2CEBAFB800C49673 /* rhinoSdkClippingPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkClippingPlane.h; sourceTree = "<group>"; };
+		A182464D2CEBAFB800C49673 /* RhinoSdkColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkColorButton.h; sourceTree = "<group>"; };
+		A182464E2CEBAFB800C49673 /* rhinoSdkCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkCommand.h; sourceTree = "<group>"; };
+		A182464F2CEBAFB800C49673 /* rhinoSdkCommandOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkCommandOption.h; sourceTree = "<group>"; };
+		A18246502CEBAFB800C49673 /* rhinoSdkCommandOptionName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkCommandOptionName.h; sourceTree = "<group>"; };
+		A18246512CEBAFB800C49673 /* RhinoSdkContextMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkContextMenu.h; sourceTree = "<group>"; };
+		A18246522CEBAFB800C49673 /* rhinoSdkCoreClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkCoreClasses.h; sourceTree = "<group>"; };
+		A18246532CEBAFB800C49673 /* rhinoSdkCurveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkCurveObject.h; sourceTree = "<group>"; };
+		A18246542CEBAFB800C49673 /* rhinoSdkDetailObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDetailObject.h; sourceTree = "<group>"; };
+		A18246552CEBAFB800C49673 /* RhinoSdkDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDialog.h; sourceTree = "<group>"; };
+		A18246562CEBAFB800C49673 /* RhinoSdkDib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDib.h; sourceTree = "<group>"; };
+		A18246572CEBAFB800C49673 /* rhinoSdkDigitizerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDigitizerInfo.h; sourceTree = "<group>"; };
+		A18246582CEBAFB800C49673 /* RhinoSdkDigitizerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDigitizerManager.h; sourceTree = "<group>"; };
+		A18246592CEBAFB800C49673 /* RhinoSdkDimAngular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDimAngular.h; sourceTree = "<group>"; };
+		A182465A2CEBAFB800C49673 /* RhinoSdkDimension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDimension.h; sourceTree = "<group>"; };
+		A182465B2CEBAFB800C49673 /* RhinoSdkDimLinear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDimLinear.h; sourceTree = "<group>"; };
+		A182465C2CEBAFB800C49673 /* rhinoSdkDimRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDimRadius.h; sourceTree = "<group>"; };
+		A182465D2CEBAFB800C49673 /* rhinoSdkDimStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDimStyle.h; sourceTree = "<group>"; };
+		A182465E2CEBAFB800C49673 /* RhinoSdkDimStyleComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDimStyleComboBox.h; sourceTree = "<group>"; };
+		A182465F2CEBAFB800C49673 /* RhinoSdkDirectoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDirectoryManager.h; sourceTree = "<group>"; };
+		A18246602CEBAFB800C49673 /* RhinoSdkDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDisplay.h; sourceTree = "<group>"; };
+		A18246612CEBAFB800C49673 /* RhinoSdkDisplayAttrsMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDisplayAttrsMgr.h; sourceTree = "<group>"; };
+		A18246622CEBAFB800C49673 /* RhinoSdkDisplayConduit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDisplayConduit.h; sourceTree = "<group>"; };
+		A18246632CEBAFB800C49673 /* RhinoSdkDisplayEngine_GDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDisplayEngine_GDI.h; sourceTree = "<group>"; };
+		A18246642CEBAFB800C49673 /* RhinoSdkDisplayEngine_OGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDisplayEngine_OGL.h; sourceTree = "<group>"; };
+		A18246652CEBAFB800C49673 /* RhinoSdkDisplayEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDisplayEngine.h; sourceTree = "<group>"; };
+		A18246662CEBAFB800C49673 /* rhinoSdkDisplayEngineAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDisplayEngineAttributes.h; sourceTree = "<group>"; };
+		A18246672CEBAFB800C49673 /* RhinoSdkDisplayPipeline_GDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDisplayPipeline_GDI.h; sourceTree = "<group>"; };
+		A18246682CEBAFB800C49673 /* RhinoSdkDisplayPipeline_OGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDisplayPipeline_OGL.h; sourceTree = "<group>"; };
+		A18246692CEBAFB800C49673 /* RhinoSdkDisplayPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDisplayPipeline.h; sourceTree = "<group>"; };
+		A182466A2CEBAFB800C49673 /* rhinoSdkDisplayPipelineAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDisplayPipelineAttributes.h; sourceTree = "<group>"; };
+		A182466B2CEBAFB800C49673 /* rhinoSdkDisplayPipelineMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDisplayPipelineMaterial.h; sourceTree = "<group>"; };
+		A182466C2CEBAFB800C49673 /* rhinoSdkDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDoc.h; sourceTree = "<group>"; };
+		A182466D2CEBAFB800C49673 /* rhinoSdkDocProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDocProperties.h; sourceTree = "<group>"; };
+		A182466E2CEBAFB800C49673 /* RhinoSdkDpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDpi.h; sourceTree = "<group>"; };
+		A182466F2CEBAFB800C49673 /* rhinoSdkDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkDraw.h; sourceTree = "<group>"; };
+		A18246702CEBAFB800C49673 /* RhinoSdkDropTargetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkDropTargetManager.h; sourceTree = "<group>"; };
+		A18246712CEBAFB800C49673 /* rhinoSdkEventWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkEventWatcher.h; sourceTree = "<group>"; };
+		A18246722CEBAFB800C49673 /* rhinoSdkExtrude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkExtrude.h; sourceTree = "<group>"; };
+		A18246732CEBAFB800C49673 /* rhinoSdkExtrusionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkExtrusionObject.h; sourceTree = "<group>"; };
+		A18246742CEBAFB800C49673 /* rhinoSdkFair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkFair.h; sourceTree = "<group>"; };
+		A18246752CEBAFB800C49673 /* rhinoSdkFileMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkFileMenu.h; sourceTree = "<group>"; };
+		A18246762CEBAFB800C49673 /* rhinoSdkFileOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkFileOptions.h; sourceTree = "<group>"; };
+		A18246772CEBAFB800C49673 /* rhinoSdkFileUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkFileUtilities.h; sourceTree = "<group>"; };
+		A18246782CEBAFB800C49673 /* RhinoSdkFitPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkFitPatch.h; sourceTree = "<group>"; };
+		A18246792CEBAFB800C49673 /* rhinoSdkFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkFont.h; sourceTree = "<group>"; };
+		A182467A2CEBAFB800C49673 /* rhinoSdkGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGet.h; sourceTree = "<group>"; };
+		A182467B2CEBAFB800C49673 /* rhinoSdkGetAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetAngle.h; sourceTree = "<group>"; };
+		A182467C2CEBAFB800C49673 /* rhinoSdkGetAnnotationLeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetAnnotationLeader.h; sourceTree = "<group>"; };
+		A182467D2CEBAFB800C49673 /* rhinoSdkGetArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetArc.h; sourceTree = "<group>"; };
+		A182467E2CEBAFB800C49673 /* rhinoSdkGetCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetCircle.h; sourceTree = "<group>"; };
+		A182467F2CEBAFB800C49673 /* rhinoSdkGetCone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetCone.h; sourceTree = "<group>"; };
+		A18246802CEBAFB800C49673 /* rhinoSdkGetCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetCurve.h; sourceTree = "<group>"; };
+		A18246812CEBAFB800C49673 /* rhinoSdkGetCylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetCylinder.h; sourceTree = "<group>"; };
+		A18246822CEBAFB800C49673 /* rhinoSdkGetDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetDirection.h; sourceTree = "<group>"; };
+		A18246832CEBAFB800C49673 /* rhinoSdkGetDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetDistance.h; sourceTree = "<group>"; };
+		A18246842CEBAFB800C49673 /* rhinoSdkGetEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetEllipse.h; sourceTree = "<group>"; };
+		A18246852CEBAFB800C49673 /* rhinoSdkGetFileDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetFileDialog.h; sourceTree = "<group>"; };
+		A18246862CEBAFB800C49673 /* rhinoSdkGetFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetFrame.h; sourceTree = "<group>"; };
+		A18246872CEBAFB800C49673 /* rhinoSdkGetLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetLine.h; sourceTree = "<group>"; };
+		A18246882CEBAFB800C49673 /* rhinoSdkGetObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetObject.h; sourceTree = "<group>"; };
+		A18246892CEBAFB800C49673 /* rhinoSdkGetParabola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetParabola.h; sourceTree = "<group>"; };
+		A182468A2CEBAFB800C49673 /* rhinoSdkGetPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetPlane.h; sourceTree = "<group>"; };
+		A182468B2CEBAFB800C49673 /* rhinoSdkGetPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetPoint.h; sourceTree = "<group>"; };
+		A182468C2CEBAFB800C49673 /* rhinoSdkGetPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetPolygon.h; sourceTree = "<group>"; };
+		A182468D2CEBAFB800C49673 /* rhinoSdkGetRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetRectangle.h; sourceTree = "<group>"; };
+		A182468E2CEBAFB800C49673 /* rhinoSdkGetRevolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetRevolve.h; sourceTree = "<group>"; };
+		A182468F2CEBAFB800C49673 /* rhinoSdkGetSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetSphere.h; sourceTree = "<group>"; };
+		A18246902CEBAFB800C49673 /* rhinoSdkGetSpiral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetSpiral.h; sourceTree = "<group>"; };
+		A18246912CEBAFB800C49673 /* rhinoSdkGetString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetString.h; sourceTree = "<group>"; };
+		A18246922CEBAFB800C49673 /* rhinoSdkGetSubCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetSubCurve.h; sourceTree = "<group>"; };
+		A18246932CEBAFB800C49673 /* rhinoSdkGetText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetText.h; sourceTree = "<group>"; };
+		A18246942CEBAFB800C49673 /* rhinoSdkGetTorus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetTorus.h; sourceTree = "<group>"; };
+		A18246952CEBAFB800C49673 /* rhinoSdkGetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetView.h; sourceTree = "<group>"; };
+		A18246962CEBAFB800C49673 /* rhinoSdkGetXform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGetXform.h; sourceTree = "<group>"; };
+		A18246972CEBAFB800C49673 /* rhinoSdkGrips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGrips.h; sourceTree = "<group>"; };
+		A18246982CEBAFB800C49673 /* rhinoSdkGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGroup.h; sourceTree = "<group>"; };
+		A18246992CEBAFB800C49673 /* rhinoSdkGroupObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGroupObject.h; sourceTree = "<group>"; };
+		A182469A2CEBAFB800C49673 /* rhinoSdkGumball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkGumball.h; sourceTree = "<group>"; };
+		A182469B2CEBAFB800C49673 /* rhinoSdkHatchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkHatchObject.h; sourceTree = "<group>"; };
+		A182469C2CEBAFB800C49673 /* rhinoSdkHatchPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkHatchPattern.h; sourceTree = "<group>"; };
+		A182469D2CEBAFB800C49673 /* RhinoSdkHistoryRecordTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkHistoryRecordTable.h; sourceTree = "<group>"; };
+		A182469E2CEBAFB800C49673 /* rhinoSdkInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkInstance.h; sourceTree = "<group>"; };
+		A182469F2CEBAFB800C49673 /* RhinoSdkIntersect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkIntersect.h; sourceTree = "<group>"; };
+		A18246A02CEBAFB800C49673 /* rhinoSdkLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkLayer.h; sourceTree = "<group>"; };
+		A18246A12CEBAFB800C49673 /* rhinoSdkLayerComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkLayerComboBox.h; sourceTree = "<group>"; };
+		A18246A22CEBAFB800C49673 /* RhinoSdkLeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkLeader.h; sourceTree = "<group>"; };
+		A18246A32CEBAFB800C49673 /* rhinoSdkLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkLight.h; sourceTree = "<group>"; };
+		A18246A42CEBAFB800C49673 /* rhinoSdkLinetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkLinetype.h; sourceTree = "<group>"; };
+		A18246A52CEBAFB800C49673 /* rhinoSdkLoft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkLoft.h; sourceTree = "<group>"; };
+		A18246A62CEBAFB800C49673 /* RhinoSdkMacRhinoApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkMacRhinoApp.h; sourceTree = "<group>"; };
+		A18246A72CEBAFB800C49673 /* rhinoSdkMacTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkMacTypes.h; sourceTree = "<group>"; };
+		A18246A82CEBAFB800C49673 /* RhinoSdkMacUiProfileContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkMacUiProfileContext.h; sourceTree = "<group>"; };
+		A18246A92CEBAFB800C49673 /* RhinoSdkMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkMatch.h; sourceTree = "<group>"; };
+		A18246AA2CEBAFB800C49673 /* RhinoSdkMatchCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkMatchCurve.h; sourceTree = "<group>"; };
+		A18246AB2CEBAFB800C49673 /* rhinoSdkMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkMaterial.h; sourceTree = "<group>"; };
+		A18246AC2CEBAFB800C49673 /* rhinoSdkMeshObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkMeshObject.h; sourceTree = "<group>"; };
+		A18246AD2CEBAFB800C49673 /* rhinoSdkMeshUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkMeshUtilities.h; sourceTree = "<group>"; };
+		A18246AE2CEBAFB800C49673 /* rhinoSdkMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkMouse.h; sourceTree = "<group>"; };
+		A18246AF2CEBAFB800C49673 /* rhinoSdkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkObject.h; sourceTree = "<group>"; };
+		A18246B02CEBAFB800C49673 /* rhinoSdkObjectAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkObjectAttributes.h; sourceTree = "<group>"; };
+		A18246B12CEBAFB800C49673 /* RhinoSdkObjectColorComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkObjectColorComboBox.h; sourceTree = "<group>"; };
+		A18246B22CEBAFB800C49673 /* rhinoSdkObjectHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkObjectHistory.h; sourceTree = "<group>"; };
+		A18246B32CEBAFB800C49673 /* RhinoSdkObjectPropertiesDialogPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkObjectPropertiesDialogPage.h; sourceTree = "<group>"; };
+		A18246B42CEBAFB800C49673 /* RhinoSdkObjectPropertiesModlessDockingDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkObjectPropertiesModlessDockingDialog.h; sourceTree = "<group>"; };
+		A18246B52CEBAFB800C49673 /* rhinoSDKOffsetCrvOnSrf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSDKOffsetCrvOnSrf.h; sourceTree = "<group>"; };
+		A18246B62CEBAFB800C49673 /* RhinoSdkOptionsDialogPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkOptionsDialogPage.h; sourceTree = "<group>"; };
+		A18246B72CEBAFB800C49673 /* RhinoSdkPageLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkPageLayoutView.h; sourceTree = "<group>"; };
+		A18246B82CEBAFB800C49673 /* RhinoSdkPages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkPages.h; sourceTree = "<group>"; };
+		A18246B92CEBAFB800C49673 /* RhinoSdkPersistentSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkPersistentSettings.h; sourceTree = "<group>"; };
+		A18246BA2CEBAFB800C49673 /* rhinoSdkPick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkPick.h; sourceTree = "<group>"; };
+		A18246BB2CEBAFB800C49673 /* RhinoSdkPlotColorComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkPlotColorComboBox.h; sourceTree = "<group>"; };
+		A18246BC2CEBAFB800C49673 /* rhinoSdkPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkPlugIn.h; sourceTree = "<group>"; };
+		A18246BD2CEBAFB800C49673 /* rhinoSdkPlugInDeclare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkPlugInDeclare.h; sourceTree = "<group>"; };
+		A18246BE2CEBAFB800C49673 /* rhinoSdkPlugInLinkingPragmas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkPlugInLinkingPragmas.h; sourceTree = "<group>"; };
+		A18246BF2CEBAFB800C49673 /* RhinoSdkPlugInManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkPlugInManager.h; sourceTree = "<group>"; };
+		A18246C02CEBAFB800C49673 /* rhinoSdkPointObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkPointObject.h; sourceTree = "<group>"; };
+		A18246C12CEBAFB800C49673 /* rhinoSdkPolyEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkPolyEdge.h; sourceTree = "<group>"; };
+		A18246C22CEBAFB800C49673 /* rhinoSdkPrintDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkPrintDialog.h; sourceTree = "<group>"; };
+		A18246C32CEBAFB800C49673 /* rhinoSdkPrintInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkPrintInfo.h; sourceTree = "<group>"; };
+		A18246C42CEBAFB800C49673 /* RhinoSdkPropertiesPages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkPropertiesPages.h; sourceTree = "<group>"; };
+		A18246C52CEBAFB800C49673 /* RhinoSdkRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkRender.h; sourceTree = "<group>"; };
+		A18246C62CEBAFB800C49673 /* RhinoSdkRenderFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkRenderFrame.h; sourceTree = "<group>"; };
+		A18246C72CEBAFB800C49673 /* RhinoSdkRenderIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkRenderIncludes.h; sourceTree = "<group>"; };
+		A18246C82CEBAFB800C49673 /* RhinoSdkRenderOverlays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkRenderOverlays.h; sourceTree = "<group>"; };
+		A18246C92CEBAFB800C49673 /* rhinoSdkRenderPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkRenderPlugIn.h; sourceTree = "<group>"; };
+		A18246CA2CEBAFB800C49673 /* RhinoSdkRenderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkRenderUtils.h; sourceTree = "<group>"; };
+		A18246CB2CEBAFB800C49673 /* RhinoSdkRenderViewWnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkRenderViewWnd.h; sourceTree = "<group>"; };
+		A18246CC2CEBAFB800C49673 /* rhinoSdkRhinoVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkRhinoVersion.h; sourceTree = "<group>"; };
+		A18246CD2CEBAFB800C49673 /* RhinoSdkRichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkRichText.h; sourceTree = "<group>"; };
+		A18246CE2CEBAFB800C49673 /* rhinoSdkSkinDll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkSkinDll.h; sourceTree = "<group>"; };
+		A18246CF2CEBAFB800C49673 /* rhinoSdkSnap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkSnap.h; sourceTree = "<group>"; };
+		A18246D02CEBAFB800C49673 /* rhinoSdkSnapshots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkSnapshots.h; sourceTree = "<group>"; };
+		A18246D12CEBAFB800C49673 /* RhinoSdkSpaceMorph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkSpaceMorph.h; sourceTree = "<group>"; };
+		A18246D22CEBAFB800C49673 /* rhinoSdkStackedDialogPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkStackedDialogPage.h; sourceTree = "<group>"; };
+		A18246D32CEBAFB800C49673 /* rhinoSdkStdafxPreamble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkStdafxPreamble.h; sourceTree = "<group>"; };
+		A18246D42CEBAFB800C49673 /* RhinoSdkSubD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkSubD.h; sourceTree = "<group>"; };
+		A18246D52CEBAFB800C49673 /* rhinoSdkSweep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkSweep.h; sourceTree = "<group>"; };
+		A18246D62CEBAFB800C49673 /* rhinoSdkSystemDialogOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkSystemDialogOptions.h; sourceTree = "<group>"; };
+		A18246D72CEBAFB800C49673 /* RhinoSdkTextOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkTextOut.h; sourceTree = "<group>"; };
+		A18246D82CEBAFB800C49673 /* rhinoSdkTextStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkTextStyleManager.h; sourceTree = "<group>"; };
+		A18246D92CEBAFB800C49673 /* rhinoSdkTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkTexture.h; sourceTree = "<group>"; };
+		A18246DA2CEBAFB800C49673 /* rhinoSdkTMacPages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkTMacPages.h; sourceTree = "<group>"; };
+		A18246DB2CEBAFB800C49673 /* rhinoSdkTMfcPages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkTMfcPages.h; sourceTree = "<group>"; };
+		A18246DC2CEBAFB800C49673 /* rhinoSdkTPages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkTPages.h; sourceTree = "<group>"; };
+		A18246DD2CEBAFB800C49673 /* RhinoSdkUiAutocomplete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiAutocomplete.h; sourceTree = "<group>"; };
+		A18246DE2CEBAFB800C49673 /* RhinoSdkUiBitmapButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiBitmapButton.h; sourceTree = "<group>"; };
+		A18246DF2CEBAFB800C49673 /* RhinoSdkUiBlockPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiBlockPreview.h; sourceTree = "<group>"; };
+		A18246E02CEBAFB800C49673 /* RhinoSdkUiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiButton.h; sourceTree = "<group>"; };
+		A18246E12CEBAFB800C49673 /* RhinoSdkUiCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiCheckBox.h; sourceTree = "<group>"; };
+		A18246E22CEBAFB800C49673 /* RhinoSdkUiCheckListBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiCheckListBox.h; sourceTree = "<group>"; };
+		A18246E32CEBAFB800C49673 /* RhinoSdkUiColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiColorButton.h; sourceTree = "<group>"; };
+		A18246E42CEBAFB800C49673 /* RhinoSdkUiColorComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiColorComboBox.h; sourceTree = "<group>"; };
+		A18246E52CEBAFB800C49673 /* RhinoSdkUiColorListBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiColorListBox.h; sourceTree = "<group>"; };
+		A18246E62CEBAFB800C49673 /* RhinoSdkUiComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiComboBox.h; sourceTree = "<group>"; };
+		A18246E72CEBAFB800C49673 /* RhinoSdkUiDHtmlDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDHtmlDialog.h; sourceTree = "<group>"; };
+		A18246E82CEBAFB800C49673 /* RhinoSdkUiDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDialog.h; sourceTree = "<group>"; };
+		A18246E92CEBAFB800C49673 /* RhinoSdkUiDialogItemResizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDialogItemResizer.h; sourceTree = "<group>"; };
+		A18246EA2CEBAFB800C49673 /* RhinoSdkUiDibMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDibMac.h; sourceTree = "<group>"; };
+		A18246EB2CEBAFB800C49673 /* RhinoSdkUiDirDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDirDialog.h; sourceTree = "<group>"; };
+		A18246EC2CEBAFB800C49673 /* RhinoSdkUiDockBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDockBar.h; sourceTree = "<group>"; };
+		A18246ED2CEBAFB800C49673 /* RhinoSdkUiDockBarCaptionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDockBarCaptionButton.h; sourceTree = "<group>"; };
+		A18246EE2CEBAFB800C49673 /* RhinoSdkUiDockBarClientWnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDockBarClientWnd.h; sourceTree = "<group>"; };
+		A18246EF2CEBAFB800C49673 /* RhinoSdkUiDockBarDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDockBarDialog.h; sourceTree = "<group>"; };
+		A18246F02CEBAFB800C49673 /* RhinoSdkUiDockBarExpandableTabCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDockBarExpandableTabCtrl.h; sourceTree = "<group>"; };
+		A18246F12CEBAFB800C49673 /* RhinoSdkUiDockBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDockBarManager.h; sourceTree = "<group>"; };
+		A18246F22CEBAFB800C49673 /* RhinoSdkUiDockbarTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDockbarTab.h; sourceTree = "<group>"; };
+		A18246F32CEBAFB800C49673 /* RhinoSdkUiDragBitmapWnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiDragBitmapWnd.h; sourceTree = "<group>"; };
+		A18246F42CEBAFB800C49673 /* RhinoSdkUiEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiEdit.h; sourceTree = "<group>"; };
+		A18246F52CEBAFB800C49673 /* RhinoSdkUiEditInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiEditInt.h; sourceTree = "<group>"; };
+		A18246F62CEBAFB800C49673 /* RhinoSdkUiEditReal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiEditReal.h; sourceTree = "<group>"; };
+		A18246F72CEBAFB800C49673 /* RhinoSdkUiExpandableTabbedDockBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiExpandableTabbedDockBar.h; sourceTree = "<group>"; };
+		A18246F82CEBAFB800C49673 /* RhinoSdkUiExpandableTabCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiExpandableTabCtrl.h; sourceTree = "<group>"; };
+		A18246F92CEBAFB800C49673 /* RhinoSdkUiExpandableTabPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiExpandableTabPage.h; sourceTree = "<group>"; };
+		A18246FA2CEBAFB800C49673 /* RhinoSdkUiFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiFile.h; sourceTree = "<group>"; };
+		A18246FB2CEBAFB800C49673 /* RhinoSdkUiFileDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiFileDialog.h; sourceTree = "<group>"; };
+		A18246FC2CEBAFB800C49673 /* RhinoSdkUiGradientSliderCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiGradientSliderCtrl.h; sourceTree = "<group>"; };
+		A18246FD2CEBAFB800C49673 /* RhinoSdkUiGridListCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiGridListCombo.h; sourceTree = "<group>"; };
+		A18246FE2CEBAFB800C49673 /* RhinoSdkUiGridListCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiGridListCtrl.h; sourceTree = "<group>"; };
+		A18246FF2CEBAFB800C49673 /* RhinoSdkUiGridListEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiGridListEdit.h; sourceTree = "<group>"; };
+		A18247002CEBAFB800C49673 /* RhinoSdkUiGridListHeaderCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiGridListHeaderCtrl.h; sourceTree = "<group>"; };
+		A18247012CEBAFB800C49673 /* RhinoSdkUiHyperLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiHyperLink.h; sourceTree = "<group>"; };
+		A18247022CEBAFB800C49673 /* RhinoSdkUiImageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiImageList.h; sourceTree = "<group>"; };
+		A18247032CEBAFB800C49673 /* RhinoSdkUiIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiIncludes.h; sourceTree = "<group>"; };
+		A18247042CEBAFB800C49673 /* RhinoSdkUiInPlaceCtrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiInPlaceCtrls.h; sourceTree = "<group>"; };
+		A18247052CEBAFB800C49673 /* RhinoSdkUiLayerComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiLayerComboBox.h; sourceTree = "<group>"; };
+		A18247062CEBAFB800C49673 /* rhinoSdkUiLayerListCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkUiLayerListCtrl.h; sourceTree = "<group>"; };
+		A18247072CEBAFB800C49673 /* RhinoSdkUiLibManagers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiLibManagers.h; sourceTree = "<group>"; };
+		A18247082CEBAFB800C49673 /* RhinoSdkUiLineTypeListCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiLineTypeListCtrl.h; sourceTree = "<group>"; };
+		A18247092CEBAFB800C49673 /* RhinoSdkUiListBoxEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiListBoxEx.h; sourceTree = "<group>"; };
+		A182470A2CEBAFB800C49673 /* RhinoSdkUiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiManager.h; sourceTree = "<group>"; };
+		A182470B2CEBAFB800C49673 /* RhinoSdkUiMemDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiMemDC.h; sourceTree = "<group>"; };
+		A182470C2CEBAFB800C49673 /* RhinoSdkUiMessagePump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiMessagePump.h; sourceTree = "<group>"; };
+		A182470D2CEBAFB800C49673 /* RhinoSdkUiMultiMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiMultiMonitor.h; sourceTree = "<group>"; };
+		A182470E2CEBAFB800C49673 /* RhinoSdkUiOptionsListCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiOptionsListCtrl.h; sourceTree = "<group>"; };
+		A182470F2CEBAFB800C49673 /* RhinoSdkUiOptionsListCtrlItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiOptionsListCtrlItem.h; sourceTree = "<group>"; };
+		A18247102CEBAFB800C49673 /* RhinoSdkUiPageDockBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiPageDockBarManager.h; sourceTree = "<group>"; };
+		A18247112CEBAFB800C49673 /* RhinoSdkUiPointEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiPointEdit.h; sourceTree = "<group>"; };
+		A18247122CEBAFB800C49673 /* RhinoSdkUiPopUpListWnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiPopUpListWnd.h; sourceTree = "<group>"; };
+		A18247132CEBAFB800C49673 /* RhinoSdkUiPopUpMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiPopUpMenu.h; sourceTree = "<group>"; };
+		A18247142CEBAFB800C49673 /* RhinoSdkUiPopuUpListBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiPopuUpListBox.h; sourceTree = "<group>"; };
+		A18247152CEBAFB800C49673 /* RhinoSdkUiPrintWidthListCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiPrintWidthListCtrl.h; sourceTree = "<group>"; };
+		A18247162CEBAFB800C49673 /* rhinoSdkUiProfileContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkUiProfileContext.h; sourceTree = "<group>"; };
+		A18247172CEBAFB800C49673 /* RhinoSdkUiProfileContextIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiProfileContextIterator.h; sourceTree = "<group>"; };
+		A18247182CEBAFB800C49673 /* RhinoSdkUiProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiProgressBar.h; sourceTree = "<group>"; };
+		A18247192CEBAFB800C49673 /* RhinoSdkUiProgressCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiProgressCtrl.h; sourceTree = "<group>"; };
+		A182471A2CEBAFB800C49673 /* RhinoSdkUiRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiRegistry.h; sourceTree = "<group>"; };
+		A182471B2CEBAFB800C49673 /* RhinoSdkUiResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiResourceManager.h; sourceTree = "<group>"; };
+		A182471C2CEBAFB800C49673 /* RhinoSdkUiRichEditCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiRichEditCtrl.h; sourceTree = "<group>"; };
+		A182471D2CEBAFB800C49673 /* RhinoSdkUiRmaPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiRmaPort.h; sourceTree = "<group>"; };
+		A182471E2CEBAFB800C49673 /* RhinoSdkUiSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiSeparator.h; sourceTree = "<group>"; };
+		A182471F2CEBAFB800C49673 /* RhinoSdkUiSliderCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiSliderCtrl.h; sourceTree = "<group>"; };
+		A18247202CEBAFB800C49673 /* RhinoSdkUiStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiStatic.h; sourceTree = "<group>"; };
+		A18247212CEBAFB800C49673 /* RhinoSdkUiTabbedSheetCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiTabbedSheetCtrl.h; sourceTree = "<group>"; };
+		A18247222CEBAFB800C49673 /* RhinoSdkUiTabCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiTabCtrl.h; sourceTree = "<group>"; };
+		A18247232CEBAFB800C49673 /* RhinoSdkUiTabCtrlPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiTabCtrlPage.h; sourceTree = "<group>"; };
+		A18247242CEBAFB800C49673 /* rhinoSdkUiTabPageCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkUiTabPageCtrl.h; sourceTree = "<group>"; };
+		A18247252CEBAFB800C49673 /* RhinoSdkUiThemeDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiThemeDraw.h; sourceTree = "<group>"; };
+		A18247262CEBAFB800C49673 /* RhinoSdkUiToolTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiToolTip.h; sourceTree = "<group>"; };
+		A18247272CEBAFB800C49673 /* RhinoSdkUiUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiUtilities.h; sourceTree = "<group>"; };
+		A18247282CEBAFB800C49673 /* RhinoSdkUiWindowsPaintManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiWindowsPaintManager.h; sourceTree = "<group>"; };
+		A18247292CEBAFB800C49673 /* RhinoSdkUiXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkUiXML.h; sourceTree = "<group>"; };
+		A182472A2CEBAFB800C49673 /* rhinoSdkUnrollSrf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkUnrollSrf.h; sourceTree = "<group>"; };
+		A182472B2CEBAFB800C49673 /* rhinoSdkUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkUtilities.h; sourceTree = "<group>"; };
+		A182472C2CEBAFB800C49673 /* rhinoSdkVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkVersion.h; sourceTree = "<group>"; };
+		A182472D2CEBAFB800C49673 /* rhinoSdkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkView.h; sourceTree = "<group>"; };
+		A182472E2CEBAFB800C49673 /* rhinoSdkViewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkViewport.h; sourceTree = "<group>"; };
+		A182472F2CEBAFB800C49673 /* rhinoSdkWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkWidget.h; sourceTree = "<group>"; };
+		A18247302CEBAFB800C49673 /* rhinoSdkWindowsVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkWindowsVersion.h; sourceTree = "<group>"; };
+		A18247312CEBAFB800C49673 /* rhinoSdkWindowsVersionValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkWindowsVersionValidation.h; sourceTree = "<group>"; };
+		A18247322CEBAFB800C49673 /* RhinoSdkWorkerThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkWorkerThread.h; sourceTree = "<group>"; };
+		A18247332CEBAFB800C49673 /* rhinoSdkWorkSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdkWorkSession.h; sourceTree = "<group>"; };
+		A18247342CEBAFB800C49673 /* RhinoSdkYesNoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSdkYesNoResponse.h; sourceTree = "<group>"; };
+		A18247352CEBAFB800C49673 /* rhinoSdPropertiesPanelPageEventWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhinoSdPropertiesPanelPageEventWatcher.h; sourceTree = "<group>"; };
+		A18247362CEBAFB800C49673 /* RhinoSkdUiFontComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhinoSkdUiFontComboBox.h; sourceTree = "<group>"; };
+		A18247372CEBAFB800C49673 /* RhRdk_RCE_Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdk_RCE_Queue.h; sourceTree = "<group>"; };
+		A18247382CEBAFB800C49673 /* RhRdk_RCE_Queue2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdk_RCE_Queue2.h; sourceTree = "<group>"; };
+		A18247392CEBAFB800C49673 /* RhRdk_RDP_DisplayPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdk_RDP_DisplayPipeline.h; sourceTree = "<group>"; };
+		A182473A2CEBAFB800C49673 /* RhRdkAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkAction.h; sourceTree = "<group>"; };
+		A182473B2CEBAFB800C49673 /* RhRdkAngleCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkAngleCtrl.h; sourceTree = "<group>"; };
+		A182473C2CEBAFB800C49673 /* RhRdkAutomaticUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkAutomaticUI.h; sourceTree = "<group>"; };
+		A182473D2CEBAFB800C49673 /* RhRdkBasicEnvironmentCCI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkBasicEnvironmentCCI.h; sourceTree = "<group>"; };
+		A182473E2CEBAFB800C49673 /* RhRdkBasicMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkBasicMaterial.h; sourceTree = "<group>"; };
+		A182473F2CEBAFB800C49673 /* RhRdkBasicMaterialCCI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkBasicMaterialCCI.h; sourceTree = "<group>"; };
+		A18247402CEBAFB800C49673 /* RhRdkCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkCity.h; sourceTree = "<group>"; };
+		A18247412CEBAFB800C49673 /* RhRdkColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkColor.h; sourceTree = "<group>"; };
+		A18247422CEBAFB800C49673 /* RhRdkColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkColorButton.h; sourceTree = "<group>"; };
+		A18247432CEBAFB800C49673 /* RhRdkCompoundContentImplementor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkCompoundContentImplementor.h; sourceTree = "<group>"; };
+		A18247442CEBAFB800C49673 /* RhRdkContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContent.h; sourceTree = "<group>"; };
+		A18247452CEBAFB800C49673 /* RhRdkContentCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentCreator.h; sourceTree = "<group>"; };
+		A18247462CEBAFB800C49673 /* RhRdkContentCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentCtrl.h; sourceTree = "<group>"; };
+		A18247472CEBAFB800C49673 /* RhRdkContentCtrlBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentCtrlBase.h; sourceTree = "<group>"; };
+		A18247482CEBAFB800C49673 /* RhRdkContentEditorCustomButtonProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentEditorCustomButtonProvider.h; sourceTree = "<group>"; };
+		A18247492CEBAFB800C49673 /* RhRdkContentFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentFactory.h; sourceTree = "<group>"; };
+		A182474A2CEBAFB800C49673 /* RhRdkContentField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentField.h; sourceTree = "<group>"; };
+		A182474B2CEBAFB800C49673 /* RhRdkContentIOPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentIOPlugIn.h; sourceTree = "<group>"; };
+		A182474C2CEBAFB800C49673 /* RhRdkContentKindList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentKindList.h; sourceTree = "<group>"; };
+		A182474D2CEBAFB800C49673 /* RhRdkContentKinds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentKinds.h; sourceTree = "<group>"; };
+		A182474E2CEBAFB800C49673 /* RhRdkContentUndo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkContentUndo.h; sourceTree = "<group>"; };
+		A182474F2CEBAFB800C49673 /* RhRdkCoreContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkCoreContent.h; sourceTree = "<group>"; };
+		A18247502CEBAFB800C49673 /* RhRdkCoreDialogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkCoreDialogs.h; sourceTree = "<group>"; };
+		A18247512CEBAFB800C49673 /* RhRdkCurveGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkCurveGraph.h; sourceTree = "<group>"; };
+		A18247522CEBAFB800C49673 /* RhRdkDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkDataSource.h; sourceTree = "<group>"; };
+		A18247532CEBAFB800C49673 /* RhRdkDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkDefinitions.h; sourceTree = "<group>"; };
+		A18247542CEBAFB800C49673 /* RhRdkDeprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkDeprecated.h; sourceTree = "<group>"; };
+		A18247552CEBAFB800C49673 /* RhRdkDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkDocument.h; sourceTree = "<group>"; };
+		A18247562CEBAFB800C49673 /* RhRdkEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkEnvironment.h; sourceTree = "<group>"; };
+		A18247572CEBAFB800C49673 /* RhRdkEnvironmentFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkEnvironmentFactory.h; sourceTree = "<group>"; };
+		A18247582CEBAFB800C49673 /* RhRdkEventSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkEventSink.h; sourceTree = "<group>"; };
+		A18247592CEBAFB800C49673 /* RhRdkEventWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkEventWatcher.h; sourceTree = "<group>"; };
+		A182475A2CEBAFB800C49673 /* RhRdkExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkExtension.h; sourceTree = "<group>"; };
+		A182475B2CEBAFB800C49673 /* RhRdkExtraRequirements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkExtraRequirements.h; sourceTree = "<group>"; };
+		A182475C2CEBAFB800C49673 /* RhRdkFieldStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkFieldStrings.h; sourceTree = "<group>"; };
+		A182475D2CEBAFB800C49673 /* RhRdkFileDialogFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkFileDialogFilter.h; sourceTree = "<group>"; };
+		A182475E2CEBAFB800C49673 /* RhRdkGraphCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkGraphCtrl.h; sourceTree = "<group>"; };
+		A182475F2CEBAFB800C49673 /* RhRdkGroundPlaneSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkGroundPlaneSettings.h; sourceTree = "<group>"; };
+		A18247602CEBAFB800C49673 /* RhRdkHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkHeaders.h; sourceTree = "<group>"; };
+		A18247612CEBAFB800C49673 /* RhRdkIORContextMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkIORContextMenu.h; sourceTree = "<group>"; };
+		A18247622CEBAFB800C49673 /* RhRdkIORManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkIORManager.h; sourceTree = "<group>"; };
+		A18247632CEBAFB800C49673 /* RhRdkLightManagerSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkLightManagerSupport.h; sourceTree = "<group>"; };
+		A18247642CEBAFB800C49673 /* RhRdkLinearWorkflow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkLinearWorkflow.h; sourceTree = "<group>"; };
+		A18247652CEBAFB800C49673 /* RhRdkMarkedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkMarkedObjects.h; sourceTree = "<group>"; };
+		A18247662CEBAFB800C49673 /* RhRdkMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkMaterial.h; sourceTree = "<group>"; };
+		A18247672CEBAFB800C49673 /* RhRdkMaterialFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkMaterialFactory.h; sourceTree = "<group>"; };
+		A18247682CEBAFB800C49673 /* RhRdkModalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkModalizer.h; sourceTree = "<group>"; };
+		A18247692CEBAFB800C49673 /* RhRdkNewContentCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkNewContentCtrl.h; sourceTree = "<group>"; };
+		A182476A2CEBAFB800C49673 /* RhRdkNewPostEffectPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkNewPostEffectPlugIn.h; sourceTree = "<group>"; };
+		A182476B2CEBAFB800C49673 /* RhRdkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkObject.h; sourceTree = "<group>"; };
+		A182476C2CEBAFB800C49673 /* RhRdkObjectDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkObjectDataAccess.h; sourceTree = "<group>"; };
+		A182476D2CEBAFB800C49673 /* RhRdkPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkPlugIn.h; sourceTree = "<group>"; };
+		A182476E2CEBAFB800C49673 /* RhRdkPostEffectPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkPostEffectPlugIn.h; sourceTree = "<group>"; };
+		A182476F2CEBAFB800C49673 /* RhRdkPostEffectPlugInFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkPostEffectPlugInFactory.h; sourceTree = "<group>"; };
+		A18247702CEBAFB800C49673 /* RhRdkPostEffectPlugInManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkPostEffectPlugInManager.h; sourceTree = "<group>"; };
+		A18247712CEBAFB800C49673 /* RhRdkRendererSupportOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkRendererSupportOptions.h; sourceTree = "<group>"; };
+		A18247722CEBAFB800C49673 /* RhRdkRenderingSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkRenderingSettings.h; sourceTree = "<group>"; };
+		A18247732CEBAFB800C49673 /* RhRdkRenderPlugInIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkRenderPlugInIterator.h; sourceTree = "<group>"; };
+		A18247742CEBAFB800C49673 /* RhRdkRenderQuality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkRenderQuality.h; sourceTree = "<group>"; };
+		A18247752CEBAFB800C49673 /* RhRdkRenderSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkRenderSettings.h; sourceTree = "<group>"; };
+		A18247762CEBAFB800C49673 /* RhRdkRenderWindowEventSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkRenderWindowEventSink.h; sourceTree = "<group>"; };
+		A18247772CEBAFB800C49673 /* RhRdkResizingDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkResizingDialog.h; sourceTree = "<group>"; };
+		A18247782CEBAFB800C49673 /* RhRdkSdkNumberEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkSdkNumberEdit.h; sourceTree = "<group>"; };
+		A18247792CEBAFB800C49673 /* RhRdkSdkRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkSdkRender.h; sourceTree = "<group>"; };
+		A182477A2CEBAFB800C49673 /* RhRdkSections_MFC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkSections_MFC.h; sourceTree = "<group>"; };
+		A182477B2CEBAFB800C49673 /* RhRdkSimulatedTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkSimulatedTexture.h; sourceTree = "<group>"; };
+		A182477C2CEBAFB800C49673 /* RhRdkStorageStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkStorageStrings.h; sourceTree = "<group>"; };
+		A182477D2CEBAFB800C49673 /* RhRdkSubNodeCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkSubNodeCtrl.h; sourceTree = "<group>"; };
+		A182477E2CEBAFB800C49673 /* RhRdkSun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkSun.h; sourceTree = "<group>"; };
+		A182477F2CEBAFB800C49673 /* RhRdkSunStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkSunStorage.h; sourceTree = "<group>"; };
+		A18247802CEBAFB800C49673 /* RhRdkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkTask.h; sourceTree = "<group>"; };
+		A18247812CEBAFB800C49673 /* RhRdkTaskOrigin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkTaskOrigin.h; sourceTree = "<group>"; };
+		A18247822CEBAFB800C49673 /* RhRdkTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkTexture.h; sourceTree = "<group>"; };
+		A18247832CEBAFB800C49673 /* RhRdkTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkTextureCache.h; sourceTree = "<group>"; };
+		A18247842CEBAFB800C49673 /* RhRdkTextureFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkTextureFactory.h; sourceTree = "<group>"; };
+		A18247852CEBAFB800C49673 /* RhRdkTimeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkTimeZone.h; sourceTree = "<group>"; };
+		A18247862CEBAFB800C49673 /* RhRdkToneMappers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkToneMappers.h; sourceTree = "<group>"; };
+		A18247872CEBAFB800C49673 /* RhRdkTwoColorTextureBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkTwoColorTextureBase.h; sourceTree = "<group>"; };
+		A18247882CEBAFB800C49673 /* RhRdkTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkTypes.h; sourceTree = "<group>"; };
+		A18247892CEBAFB800C49673 /* RhRdkUiSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkUiSdk.h; sourceTree = "<group>"; };
+		A182478A2CEBAFB800C49673 /* RhRdkUuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkUuid.h; sourceTree = "<group>"; };
+		A182478B2CEBAFB800C49673 /* RhRdkUuidCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkUuidCollection.h; sourceTree = "<group>"; };
+		A182478C2CEBAFB800C49673 /* RhRdkUuids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkUuids.h; sourceTree = "<group>"; };
+		A182478D2CEBAFB800C49673 /* RhRdkVariant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RhRdkVariant.h; sourceTree = "<group>"; };
+		A182478E2CEBAFB800C49673 /* RmaSdkUiDHtmlDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RmaSdkUiDHtmlDialog.h; sourceTree = "<group>"; };
+		A18247902CEBAFB800C49673 /* OpenNURBS */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = OpenNURBS; sourceTree = "<group>"; };
+		A18247912CEBAFB800C49673 /* RhCore */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = RhCore; sourceTree = "<group>"; };
+		A18247922CEBAFB800C49673 /* RhMaterialEditor */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = RhMaterialEditor; sourceTree = "<group>"; };
+		A18247942CEBAFB800C49673 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		A18247952CEBAFB800C49673 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		A18247962CEBAFB800C49673 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		A18247972CEBAFB800C49673 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		A18247982CEBAFB800C49673 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		A18247992CEBAFB800C49673 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		A182479A2CEBAFB800C49673 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		A182479B2CEBAFB800C49673 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		A182479C2CEBAFB800C49673 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		A182479D2CEBAFB800C49673 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		A182479F2CEBAFB800C49673 /* examples_linking_pragmas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = examples_linking_pragmas.h; sourceTree = "<group>"; };
+		A18247A02CEBAFB800C49673 /* examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = examples.h; sourceTree = "<group>"; };
+		A18247A12CEBAFB800C49673 /* opennurbs_3dm_attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_3dm_attributes.h; sourceTree = "<group>"; };
+		A18247A22CEBAFB800C49673 /* opennurbs_3dm_properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_3dm_properties.h; sourceTree = "<group>"; };
+		A18247A32CEBAFB800C49673 /* opennurbs_3dm_settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_3dm_settings.h; sourceTree = "<group>"; };
+		A18247A42CEBAFB800C49673 /* opennurbs_3dm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_3dm.h; sourceTree = "<group>"; };
+		A18247A52CEBAFB800C49673 /* opennurbs_annotationbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_annotationbase.h; sourceTree = "<group>"; };
+		A18247A62CEBAFB800C49673 /* opennurbs_apple_nsfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_apple_nsfont.h; sourceTree = "<group>"; };
+		A18247A72CEBAFB800C49673 /* opennurbs_arc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_arc.h; sourceTree = "<group>"; };
+		A18247A82CEBAFB800C49673 /* opennurbs_arccurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_arccurve.h; sourceTree = "<group>"; };
+		A18247A92CEBAFB800C49673 /* opennurbs_archivable_dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_archivable_dictionary.h; sourceTree = "<group>"; };
+		A18247AA2CEBAFB800C49673 /* opennurbs_archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_archive.h; sourceTree = "<group>"; };
+		A18247AB2CEBAFB800C49673 /* opennurbs_array_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_array_defs.h; sourceTree = "<group>"; };
+		A18247AC2CEBAFB800C49673 /* opennurbs_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_array.h; sourceTree = "<group>"; };
+		A18247AD2CEBAFB800C49673 /* opennurbs_base32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_base32.h; sourceTree = "<group>"; };
+		A18247AE2CEBAFB800C49673 /* opennurbs_base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_base64.h; sourceTree = "<group>"; };
+		A18247AF2CEBAFB800C49673 /* opennurbs_beam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_beam.h; sourceTree = "<group>"; };
+		A18247B02CEBAFB800C49673 /* opennurbs_bezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_bezier.h; sourceTree = "<group>"; };
+		A18247B12CEBAFB800C49673 /* opennurbs_bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_bitmap.h; sourceTree = "<group>"; };
+		A18247B22CEBAFB800C49673 /* opennurbs_bounding_box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_bounding_box.h; sourceTree = "<group>"; };
+		A18247B32CEBAFB800C49673 /* opennurbs_box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_box.h; sourceTree = "<group>"; };
+		A18247B42CEBAFB800C49673 /* opennurbs_brep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_brep.h; sourceTree = "<group>"; };
+		A18247B52CEBAFB800C49673 /* opennurbs_circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_circle.h; sourceTree = "<group>"; };
+		A18247B62CEBAFB800C49673 /* opennurbs_color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_color.h; sourceTree = "<group>"; };
+		A18247B72CEBAFB800C49673 /* opennurbs_compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_compress.h; sourceTree = "<group>"; };
+		A18247B82CEBAFB800C49673 /* opennurbs_compstat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_compstat.h; sourceTree = "<group>"; };
+		A18247B92CEBAFB800C49673 /* opennurbs_cone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_cone.h; sourceTree = "<group>"; };
+		A18247BA2CEBAFB800C49673 /* opennurbs_convex_poly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_convex_poly.h; sourceTree = "<group>"; };
+		A18247BB2CEBAFB800C49673 /* opennurbs_cpp_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_cpp_base.h; sourceTree = "<group>"; };
+		A18247BC2CEBAFB800C49673 /* opennurbs_crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_crc.h; sourceTree = "<group>"; };
+		A18247BD2CEBAFB800C49673 /* opennurbs_current_environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_current_environment.h; sourceTree = "<group>"; };
+		A18247BE2CEBAFB800C49673 /* opennurbs_curve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_curve.h; sourceTree = "<group>"; };
+		A18247BF2CEBAFB800C49673 /* opennurbs_curveonsurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_curveonsurface.h; sourceTree = "<group>"; };
+		A18247C02CEBAFB800C49673 /* opennurbs_curveproxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_curveproxy.h; sourceTree = "<group>"; };
+		A18247C12CEBAFB800C49673 /* opennurbs_cylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_cylinder.h; sourceTree = "<group>"; };
+		A18247C22CEBAFB800C49673 /* opennurbs_date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_date.h; sourceTree = "<group>"; };
+		A18247C32CEBAFB800C49673 /* opennurbs_decals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_decals.h; sourceTree = "<group>"; };
+		A18247C42CEBAFB800C49673 /* opennurbs_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_defines.h; sourceTree = "<group>"; };
+		A18247C52CEBAFB800C49673 /* opennurbs_detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_detail.h; sourceTree = "<group>"; };
+		A18247C62CEBAFB800C49673 /* opennurbs_dimension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_dimension.h; sourceTree = "<group>"; };
+		A18247C72CEBAFB800C49673 /* opennurbs_dimensionformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_dimensionformat.h; sourceTree = "<group>"; };
+		A18247C82CEBAFB800C49673 /* opennurbs_dimensionstyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_dimensionstyle.h; sourceTree = "<group>"; };
+		A18247C92CEBAFB800C49673 /* opennurbs_dithering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_dithering.h; sourceTree = "<group>"; };
+		A18247CA2CEBAFB800C49673 /* opennurbs_dll_resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_dll_resource.h; sourceTree = "<group>"; };
+		A18247CB2CEBAFB800C49673 /* opennurbs_ellipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_ellipse.h; sourceTree = "<group>"; };
+		A18247CC2CEBAFB800C49673 /* opennurbs_embedded_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_embedded_file.h; sourceTree = "<group>"; };
+		A18247CD2CEBAFB800C49673 /* opennurbs_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_error.h; sourceTree = "<group>"; };
+		A18247CE2CEBAFB800C49673 /* opennurbs_evaluate_nurbs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_evaluate_nurbs.h; sourceTree = "<group>"; };
+		A18247CF2CEBAFB800C49673 /* opennurbs_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_extensions.h; sourceTree = "<group>"; };
+		A18247D02CEBAFB800C49673 /* opennurbs_file_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_file_utilities.h; sourceTree = "<group>"; };
+		A18247D12CEBAFB800C49673 /* opennurbs_font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_font.h; sourceTree = "<group>"; };
+		A18247D22CEBAFB800C49673 /* opennurbs_fpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_fpoint.h; sourceTree = "<group>"; };
+		A18247D32CEBAFB800C49673 /* opennurbs_freetype_include.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_freetype_include.h; sourceTree = "<group>"; };
+		A18247D42CEBAFB800C49673 /* opennurbs_freetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_freetype.h; sourceTree = "<group>"; };
+		A18247D52CEBAFB800C49673 /* opennurbs_fsp_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_fsp_defs.h; sourceTree = "<group>"; };
+		A18247D62CEBAFB800C49673 /* opennurbs_fsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_fsp.h; sourceTree = "<group>"; };
+		A18247D72CEBAFB800C49673 /* opennurbs_function_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_function_list.h; sourceTree = "<group>"; };
+		A18247D82CEBAFB800C49673 /* opennurbs_geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_geometry.h; sourceTree = "<group>"; };
+		A18247D92CEBAFB800C49673 /* opennurbs_gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_gl.h; sourceTree = "<group>"; };
+		A18247DA2CEBAFB800C49673 /* opennurbs_ground_plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_ground_plane.h; sourceTree = "<group>"; };
+		A18247DB2CEBAFB800C49673 /* opennurbs_group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_group.h; sourceTree = "<group>"; };
+		A18247DC2CEBAFB800C49673 /* opennurbs_hash_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_hash_table.h; sourceTree = "<group>"; };
+		A18247DD2CEBAFB800C49673 /* opennurbs_hatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_hatch.h; sourceTree = "<group>"; };
+		A18247DE2CEBAFB800C49673 /* opennurbs_hsort_template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_hsort_template.h; sourceTree = "<group>"; };
+		A18247DF2CEBAFB800C49673 /* opennurbs_input_libsdir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_input_libsdir.h; sourceTree = "<group>"; };
+		A18247E02CEBAFB800C49673 /* opennurbs_instance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_instance.h; sourceTree = "<group>"; };
+		A18247E12CEBAFB800C49673 /* opennurbs_internal_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_internal_defines.h; sourceTree = "<group>"; };
+		A18247E22CEBAFB800C49673 /* opennurbs_internal_glyph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_internal_glyph.h; sourceTree = "<group>"; };
+		A18247E32CEBAFB800C49673 /* opennurbs_internal_unicode_cp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_internal_unicode_cp.h; sourceTree = "<group>"; };
+		A18247E42CEBAFB800C49673 /* opennurbs_internal_V2_annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_internal_V2_annotation.h; sourceTree = "<group>"; };
+		A18247E52CEBAFB800C49673 /* opennurbs_internal_V5_annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_internal_V5_annotation.h; sourceTree = "<group>"; };
+		A18247E62CEBAFB800C49673 /* opennurbs_internal_V5_dimstyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_internal_V5_dimstyle.h; sourceTree = "<group>"; };
+		A18247E72CEBAFB800C49673 /* opennurbs_intersect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_intersect.h; sourceTree = "<group>"; };
+		A18247E82CEBAFB800C49673 /* opennurbs_ipoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_ipoint.h; sourceTree = "<group>"; };
+		A18247E92CEBAFB800C49673 /* opennurbs_knot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_knot.h; sourceTree = "<group>"; };
+		A18247EA2CEBAFB800C49673 /* opennurbs_layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_layer.h; sourceTree = "<group>"; };
+		A18247EB2CEBAFB800C49673 /* opennurbs_leader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_leader.h; sourceTree = "<group>"; };
+		A18247EC2CEBAFB800C49673 /* opennurbs_light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_light.h; sourceTree = "<group>"; };
+		A18247ED2CEBAFB800C49673 /* opennurbs_line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_line.h; sourceTree = "<group>"; };
+		A18247EE2CEBAFB800C49673 /* opennurbs_linear_workflow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_linear_workflow.h; sourceTree = "<group>"; };
+		A18247EF2CEBAFB800C49673 /* opennurbs_linecurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_linecurve.h; sourceTree = "<group>"; };
+		A18247F02CEBAFB800C49673 /* opennurbs_linestyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_linestyle.h; sourceTree = "<group>"; };
+		A18247F12CEBAFB800C49673 /* opennurbs_linetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_linetype.h; sourceTree = "<group>"; };
+		A18247F22CEBAFB800C49673 /* opennurbs_locale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_locale.h; sourceTree = "<group>"; };
+		A18247F32CEBAFB800C49673 /* opennurbs_lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_lock.h; sourceTree = "<group>"; };
+		A18247F42CEBAFB800C49673 /* opennurbs_lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_lookup.h; sourceTree = "<group>"; };
+		A18247F52CEBAFB800C49673 /* opennurbs_mapchan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_mapchan.h; sourceTree = "<group>"; };
+		A18247F62CEBAFB800C49673 /* opennurbs_material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_material.h; sourceTree = "<group>"; };
+		A18247F72CEBAFB800C49673 /* opennurbs_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_math.h; sourceTree = "<group>"; };
+		A18247F82CEBAFB800C49673 /* opennurbs_matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_matrix.h; sourceTree = "<group>"; };
+		A18247F92CEBAFB800C49673 /* opennurbs_md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_md5.h; sourceTree = "<group>"; };
+		A18247FA2CEBAFB800C49673 /* opennurbs_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_memory.h; sourceTree = "<group>"; };
+		A18247FB2CEBAFB800C49673 /* opennurbs_mesh_modifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_mesh_modifiers.h; sourceTree = "<group>"; };
+		A18247FC2CEBAFB800C49673 /* opennurbs_mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_mesh.h; sourceTree = "<group>"; };
+		A18247FD2CEBAFB800C49673 /* opennurbs_model_component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_model_component.h; sourceTree = "<group>"; };
+		A18247FE2CEBAFB800C49673 /* opennurbs_model_geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_model_geometry.h; sourceTree = "<group>"; };
+		A18247FF2CEBAFB800C49673 /* opennurbs_nurbscurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_nurbscurve.h; sourceTree = "<group>"; };
+		A18248002CEBAFB800C49673 /* opennurbs_nurbssurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_nurbssurface.h; sourceTree = "<group>"; };
+		A18248012CEBAFB800C49673 /* opennurbs_object_history.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_object_history.h; sourceTree = "<group>"; };
+		A18248022CEBAFB800C49673 /* opennurbs_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_object.h; sourceTree = "<group>"; };
+		A18248032CEBAFB800C49673 /* opennurbs_objref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_objref.h; sourceTree = "<group>"; };
+		A18248042CEBAFB800C49673 /* opennurbs_offsetsurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_offsetsurface.h; sourceTree = "<group>"; };
+		A18248052CEBAFB800C49673 /* opennurbs_optimize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_optimize.h; sourceTree = "<group>"; };
+		A18248062CEBAFB800C49673 /* opennurbs_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_parse.h; sourceTree = "<group>"; };
+		A18248072CEBAFB800C49673 /* opennurbs_photogrammetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_photogrammetry.h; sourceTree = "<group>"; };
+		A18248082CEBAFB800C49673 /* opennurbs_plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plane.h; sourceTree = "<group>"; };
+		A18248092CEBAFB800C49673 /* opennurbs_planesurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_planesurface.h; sourceTree = "<group>"; };
+		A182480A2CEBAFB800C49673 /* opennurbs_pluginlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_pluginlist.h; sourceTree = "<group>"; };
+		A182480B2CEBAFB800C49673 /* opennurbs_plus_crashtest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_crashtest.h; sourceTree = "<group>"; };
+		A182480C2CEBAFB800C49673 /* opennurbs_plus_function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_function.h; sourceTree = "<group>"; };
+		A182480D2CEBAFB800C49673 /* opennurbs_plus_hiddenline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_hiddenline.h; sourceTree = "<group>"; };
+		A182480E2CEBAFB800C49673 /* opennurbs_plus_idimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_idimage.h; sourceTree = "<group>"; };
+		A182480F2CEBAFB800C49673 /* opennurbs_plus_implicitfn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_implicitfn.h; sourceTree = "<group>"; };
+		A18248102CEBAFB800C49673 /* opennurbs_plus_massprop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_massprop.h; sourceTree = "<group>"; };
+		A18248112CEBAFB800C49673 /* opennurbs_plus_mesh_intersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_mesh_intersection.h; sourceTree = "<group>"; };
+		A18248122CEBAFB800C49673 /* opennurbs_plus_mesh_marker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_mesh_marker.h; sourceTree = "<group>"; };
+		A18248132CEBAFB800C49673 /* opennurbs_plus_particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_particle.h; sourceTree = "<group>"; };
+		A18248142CEBAFB800C49673 /* opennurbs_plus_rectpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_rectpack.h; sourceTree = "<group>"; };
+		A18248152CEBAFB800C49673 /* opennurbs_plus_rectpack2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_rectpack2.h; sourceTree = "<group>"; };
+		A18248162CEBAFB800C49673 /* opennurbs_plus_registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_registry.h; sourceTree = "<group>"; };
+		A18248172CEBAFB800C49673 /* opennurbs_plus_sections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_sections.h; sourceTree = "<group>"; };
+		A18248182CEBAFB800C49673 /* opennurbs_plus_sil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_sil.h; sourceTree = "<group>"; };
+		A18248192CEBAFB800C49673 /* opennurbs_plus_sleeplock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_sleeplock.h; sourceTree = "<group>"; };
+		A182481A2CEBAFB800C49673 /* opennurbs_plus_squish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_squish.h; sourceTree = "<group>"; };
+		A182481B2CEBAFB800C49673 /* opennurbs_plus_subd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_subd.h; sourceTree = "<group>"; };
+		A182481C2CEBAFB800C49673 /* opennurbs_plus_testheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_testheader.h; sourceTree = "<group>"; };
+		A182481D2CEBAFB800C49673 /* opennurbs_plus_trimesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_trimesh.h; sourceTree = "<group>"; };
+		A182481E2CEBAFB800C49673 /* opennurbs_plus_validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_validate.h; sourceTree = "<group>"; };
+		A182481F2CEBAFB800C49673 /* opennurbs_plus_x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus_x.h; sourceTree = "<group>"; };
+		A18248202CEBAFB800C49673 /* opennurbs_plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_plus.h; sourceTree = "<group>"; };
+		A18248212CEBAFB800C49673 /* opennurbs_point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_point.h; sourceTree = "<group>"; };
+		A18248222CEBAFB800C49673 /* opennurbs_pointcloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_pointcloud.h; sourceTree = "<group>"; };
+		A18248232CEBAFB800C49673 /* opennurbs_pointgeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_pointgeometry.h; sourceTree = "<group>"; };
+		A18248242CEBAFB800C49673 /* opennurbs_pointgrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_pointgrid.h; sourceTree = "<group>"; };
+		A18248252CEBAFB800C49673 /* opennurbs_polycurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_polycurve.h; sourceTree = "<group>"; };
+		A18248262CEBAFB800C49673 /* opennurbs_polyedgecurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_polyedgecurve.h; sourceTree = "<group>"; };
+		A18248272CEBAFB800C49673 /* opennurbs_polyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_polyline.h; sourceTree = "<group>"; };
+		A18248282CEBAFB800C49673 /* opennurbs_polylinecurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_polylinecurve.h; sourceTree = "<group>"; };
+		A18248292CEBAFB800C49673 /* opennurbs_post_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_post_effects.h; sourceTree = "<group>"; };
+		A182482A2CEBAFB800C49673 /* opennurbs_private_wrap_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_private_wrap_defs.h; sourceTree = "<group>"; };
+		A182482B2CEBAFB800C49673 /* opennurbs_private_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_private_wrap.h; sourceTree = "<group>"; };
+		A182482C2CEBAFB800C49673 /* opennurbs_progress_reporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_progress_reporter.h; sourceTree = "<group>"; };
+		A182482D2CEBAFB800C49673 /* opennurbs_public_examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_public_examples.h; sourceTree = "<group>"; };
+		A182482E2CEBAFB800C49673 /* opennurbs_public_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_public_version.h; sourceTree = "<group>"; };
+		A182482F2CEBAFB800C49673 /* opennurbs_public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_public.h; sourceTree = "<group>"; };
+		A18248302CEBAFB800C49673 /* opennurbs_qsort_template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_qsort_template.h; sourceTree = "<group>"; };
+		A18248312CEBAFB800C49673 /* opennurbs_quacksort_template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_quacksort_template.h; sourceTree = "<group>"; };
+		A18248322CEBAFB800C49673 /* opennurbs_quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_quaternion.h; sourceTree = "<group>"; };
+		A18248332CEBAFB800C49673 /* opennurbs_rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_rand.h; sourceTree = "<group>"; };
+		A18248342CEBAFB800C49673 /* opennurbs_render_channels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_render_channels.h; sourceTree = "<group>"; };
+		A18248352CEBAFB800C49673 /* opennurbs_render_content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_render_content.h; sourceTree = "<group>"; };
+		A18248362CEBAFB800C49673 /* opennurbs_render_settings_ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_render_settings_ex.h; sourceTree = "<group>"; };
+		A18248372CEBAFB800C49673 /* opennurbs_rendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_rendering.h; sourceTree = "<group>"; };
+		A18248382CEBAFB800C49673 /* opennurbs_revsurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_revsurface.h; sourceTree = "<group>"; };
+		A18248392CEBAFB800C49673 /* opennurbs_rtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_rtree.h; sourceTree = "<group>"; };
+		A182483A2CEBAFB800C49673 /* opennurbs_safe_frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_safe_frame.h; sourceTree = "<group>"; };
+		A182483B2CEBAFB800C49673 /* opennurbs_sectionstyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_sectionstyle.h; sourceTree = "<group>"; };
+		A182483C2CEBAFB800C49673 /* opennurbs_sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_sha1.h; sourceTree = "<group>"; };
+		A182483D2CEBAFB800C49673 /* opennurbs_skylight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_skylight.h; sourceTree = "<group>"; };
+		A182483E2CEBAFB800C49673 /* opennurbs_sleeplock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_sleeplock.h; sourceTree = "<group>"; };
+		A182483F2CEBAFB800C49673 /* opennurbs_sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_sphere.h; sourceTree = "<group>"; };
+		A18248402CEBAFB800C49673 /* opennurbs_std_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_std_string.h; sourceTree = "<group>"; };
+		A18248412CEBAFB800C49673 /* opennurbs_string_value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_string_value.h; sourceTree = "<group>"; };
+		A18248422CEBAFB800C49673 /* opennurbs_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_string.h; sourceTree = "<group>"; };
+		A18248432CEBAFB800C49673 /* opennurbs_subd_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_subd_data.h; sourceTree = "<group>"; };
+		A18248442CEBAFB800C49673 /* opennurbs_subd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_subd.h; sourceTree = "<group>"; };
+		A18248452CEBAFB800C49673 /* opennurbs_sumsurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_sumsurface.h; sourceTree = "<group>"; };
+		A18248462CEBAFB800C49673 /* opennurbs_sun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_sun.h; sourceTree = "<group>"; };
+		A18248472CEBAFB800C49673 /* opennurbs_surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_surface.h; sourceTree = "<group>"; };
+		A18248482CEBAFB800C49673 /* opennurbs_surfaceproxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_surfaceproxy.h; sourceTree = "<group>"; };
+		A18248492CEBAFB800C49673 /* opennurbs_symmetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_symmetry.h; sourceTree = "<group>"; };
+		A182484A2CEBAFB800C49673 /* opennurbs_system_compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_system_compiler.h; sourceTree = "<group>"; };
+		A182484B2CEBAFB800C49673 /* opennurbs_system_runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_system_runtime.h; sourceTree = "<group>"; };
+		A182484C2CEBAFB800C49673 /* opennurbs_system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_system.h; sourceTree = "<group>"; };
+		A182484D2CEBAFB800C49673 /* opennurbs_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_table.h; sourceTree = "<group>"; };
+		A182484E2CEBAFB800C49673 /* opennurbs_terminator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_terminator.h; sourceTree = "<group>"; };
+		A182484F2CEBAFB800C49673 /* opennurbs_testclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_testclass.h; sourceTree = "<group>"; };
+		A18248502CEBAFB800C49673 /* opennurbs_text_style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_text_style.h; sourceTree = "<group>"; };
+		A18248512CEBAFB800C49673 /* opennurbs_text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_text.h; sourceTree = "<group>"; };
+		A18248522CEBAFB800C49673 /* opennurbs_textcontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_textcontext.h; sourceTree = "<group>"; };
+		A18248532CEBAFB800C49673 /* opennurbs_textdraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_textdraw.h; sourceTree = "<group>"; };
+		A18248542CEBAFB800C49673 /* opennurbs_textglyph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_textglyph.h; sourceTree = "<group>"; };
+		A18248552CEBAFB800C49673 /* opennurbs_textiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_textiterator.h; sourceTree = "<group>"; };
+		A18248562CEBAFB800C49673 /* opennurbs_textlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_textlog.h; sourceTree = "<group>"; };
+		A18248572CEBAFB800C49673 /* opennurbs_textobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_textobject.h; sourceTree = "<group>"; };
+		A18248582CEBAFB800C49673 /* opennurbs_textrun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_textrun.h; sourceTree = "<group>"; };
+		A18248592CEBAFB800C49673 /* opennurbs_texture_mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_texture_mapping.h; sourceTree = "<group>"; };
+		A182485A2CEBAFB800C49673 /* opennurbs_texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_texture.h; sourceTree = "<group>"; };
+		A182485B2CEBAFB800C49673 /* opennurbs_topology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_topology.h; sourceTree = "<group>"; };
+		A182485C2CEBAFB800C49673 /* opennurbs_torus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_torus.h; sourceTree = "<group>"; };
+		A182485D2CEBAFB800C49673 /* opennurbs_unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_unicode.h; sourceTree = "<group>"; };
+		A182485E2CEBAFB800C49673 /* opennurbs_userdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_userdata.h; sourceTree = "<group>"; };
+		A182485F2CEBAFB800C49673 /* opennurbs_uuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_uuid.h; sourceTree = "<group>"; };
+		A18248602CEBAFB800C49673 /* opennurbs_version_number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_version_number.h; sourceTree = "<group>"; };
+		A18248612CEBAFB800C49673 /* opennurbs_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_version.h; sourceTree = "<group>"; };
+		A18248622CEBAFB800C49673 /* opennurbs_viewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_viewport.h; sourceTree = "<group>"; };
+		A18248632CEBAFB800C49673 /* opennurbs_win_dwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_win_dwrite.h; sourceTree = "<group>"; };
+		A18248642CEBAFB800C49673 /* opennurbs_windows_targetver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_windows_targetver.h; sourceTree = "<group>"; };
+		A18248652CEBAFB800C49673 /* opennurbs_wip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_wip.h; sourceTree = "<group>"; };
+		A18248662CEBAFB800C49673 /* opennurbs_workspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_workspace.h; sourceTree = "<group>"; };
+		A18248672CEBAFB800C49673 /* opennurbs_xform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_xform.h; sourceTree = "<group>"; };
+		A18248682CEBAFB800C49673 /* opennurbs_xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_xml.h; sourceTree = "<group>"; };
+		A18248692CEBAFB800C49673 /* opennurbs_zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs_zlib.h; sourceTree = "<group>"; };
+		A182486A2CEBAFB800C49673 /* opennurbs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opennurbs.h; sourceTree = "<group>"; };
+		A182486C2CEBAFB800C49673 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		A182486D2CEBAFB800C49673 /* rhino_wip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rhino_wip.h; sourceTree = "<group>"; };
+		A182486E2CEBAFB800C49673 /* Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
+		A188FF022CEB7073008BBC7D /* TestMacSDK.rhp */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMacSDK.rhp; sourceTree = BUILT_PRODUCTS_DIR; };
+		A188FF092CEB70A5008BBC7D /* TestMacSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMacSDK.h; sourceTree = "<group>"; };
+		A188FF0A2CEB70A5008BBC7D /* TestMacSDK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestMacSDK.cpp; sourceTree = "<group>"; };
+		A188FF0C2CEB70BA008BBC7D /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		A188FF0D2CEB70BA008BBC7D /* Plugin.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Plugin.xcconfig; sourceTree = "<group>"; };
+		A188FF0E2CEB70BA008BBC7D /* PluginRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = PluginRelease.xcconfig; sourceTree = "<group>"; };
+		A188FF0F2CEB70BA008BBC7D /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		A188FF162CEB7123008BBC7D /* RhMaterialEditor */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = RhMaterialEditor; path = SDK/lib/RhMaterialEditor; sourceTree = "<group>"; };
+		A188FF172CEB7123008BBC7D /* RhCore */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = RhCore; path = SDK/lib/RhCore; sourceTree = "<group>"; };
+		A188FF182CEB7123008BBC7D /* OpenNURBS */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = OpenNURBS; path = SDK/lib/OpenNURBS; sourceTree = "<group>"; };
+		A188FF202CEB7340008BBC7D /* PluginDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = PluginDebug.xcconfig; sourceTree = "<group>"; };
+		A188FF222CEB739B008BBC7D /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A188FEFF2CEB7073008BBC7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18248832CED039F00C49673 /* RhMaterialEditor in Frameworks */,
+				A182487F2CED039F00C49673 /* OpenNURBS in Frameworks */,
+				A18248812CED039F00C49673 /* RhCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A182478F2CEBAFB800C49673 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				A18246202CEBAFB800C49673 /* IAutoUIExtraRequirements.h */,
+				A18246212CEBAFB800C49673 /* IRhRdk_XMLSection.h */,
+				A18246222CEBAFB800C49673 /* IRhRdkColorPicker.h */,
+				A18246232CEBAFB800C49673 /* IRhRdkContentEditor.h */,
+				A18246242CEBAFB800C49673 /* IRhRdkContentFactories.h */,
+				A18246252CEBAFB800C49673 /* IRhRdkContentIOPlugIns.h */,
+				A18246262CEBAFB800C49673 /* IRhRdkContentList.h */,
+				A18246272CEBAFB800C49673 /* IRhRdkContents.h */,
+				A18246282CEBAFB800C49673 /* IRhRdkContentUI.h */,
+				A18246292CEBAFB800C49673 /* IRhRdkCurrentEnvironment.h */,
+				A182462A2CEBAFB800C49673 /* IRhRdkCustomRenderMeshes.h */,
+				A182462B2CEBAFB800C49673 /* IRhRdkCustomRenderMeshManager.h */,
+				A182462C2CEBAFB800C49673 /* IRhRdkDecal.h */,
+				A182462D2CEBAFB800C49673 /* IRhRdkDecalSupportPlugIn.h */,
+				A182462E2CEBAFB800C49673 /* IRhRdkDithering.h */,
+				A182462F2CEBAFB800C49673 /* IRhRdkGroundPlane.h */,
+				A18246302CEBAFB800C49673 /* IRhRdkGroundPlaneSupportPlugIn.h */,
+				A18246312CEBAFB800C49673 /* IRhRdkHeaderButtonHandler.h */,
+				A18246322CEBAFB800C49673 /* IRhRdkLinearWorkflow.h */,
+				A18246332CEBAFB800C49673 /* IRhRdkMenu.h */,
+				A18246342CEBAFB800C49673 /* IRhRdkParamTransport.h */,
+				A18246352CEBAFB800C49673 /* IRhRdkPostEffectImage.h */,
+				A18246362CEBAFB800C49673 /* IRhRdkPostEffects.h */,
+				A18246372CEBAFB800C49673 /* IRhRdkPreviewSceneServer.h */,
+				A18246382CEBAFB800C49673 /* IRhRdkRenderChannels.h */,
+				A18246392CEBAFB800C49673 /* IRhRdkRenderWindow.h */,
+				A182463A2CEBAFB800C49673 /* IRhRdkSafeFrame.h */,
+				A182463B2CEBAFB800C49673 /* IRhRdkSectionHolder.h */,
+				A182463C2CEBAFB800C49673 /* IRhRdkSkylight.h */,
+				A182463D2CEBAFB800C49673 /* IRhRdkSun.h */,
+				A182463E2CEBAFB800C49673 /* IRhRdkTextureEvaluator.h */,
+				A182463F2CEBAFB800C49673 /* IRhRdkToolbar.h */,
+				A18246402CEBAFB800C49673 /* Proto_ON_Environment.h */,
+				A18246412CEBAFB800C49673 /* rhinoSdk.h */,
+				A18246422CEBAFB800C49673 /* rhinoSdkAnalysisModes.h */,
+				A18246432CEBAFB800C49673 /* rhinoSdkAnnotationObject.h */,
+				A18246442CEBAFB800C49673 /* rhinoSdkApp.h */,
+				A18246452CEBAFB800C49673 /* rhinoSdkAppSettings.h */,
+				A18246462CEBAFB800C49673 /* rhinoSdkBitmap.h */,
+				A18246472CEBAFB800C49673 /* RhinoSdkBlend.h */,
+				A18246482CEBAFB800C49673 /* rhinoSdkBrepObject.h */,
+				A18246492CEBAFB800C49673 /* rhinoSdkCageObject.h */,
+				A182464A2CEBAFB800C49673 /* rhinoSdkChannelAttributes.h */,
+				A182464B2CEBAFB800C49673 /* rhinoSdkChecks.h */,
+				A182464C2CEBAFB800C49673 /* rhinoSdkClippingPlane.h */,
+				A182464D2CEBAFB800C49673 /* RhinoSdkColorButton.h */,
+				A182464E2CEBAFB800C49673 /* rhinoSdkCommand.h */,
+				A182464F2CEBAFB800C49673 /* rhinoSdkCommandOption.h */,
+				A18246502CEBAFB800C49673 /* rhinoSdkCommandOptionName.h */,
+				A18246512CEBAFB800C49673 /* RhinoSdkContextMenu.h */,
+				A18246522CEBAFB800C49673 /* rhinoSdkCoreClasses.h */,
+				A18246532CEBAFB800C49673 /* rhinoSdkCurveObject.h */,
+				A18246542CEBAFB800C49673 /* rhinoSdkDetailObject.h */,
+				A18246552CEBAFB800C49673 /* RhinoSdkDialog.h */,
+				A18246562CEBAFB800C49673 /* RhinoSdkDib.h */,
+				A18246572CEBAFB800C49673 /* rhinoSdkDigitizerInfo.h */,
+				A18246582CEBAFB800C49673 /* RhinoSdkDigitizerManager.h */,
+				A18246592CEBAFB800C49673 /* RhinoSdkDimAngular.h */,
+				A182465A2CEBAFB800C49673 /* RhinoSdkDimension.h */,
+				A182465B2CEBAFB800C49673 /* RhinoSdkDimLinear.h */,
+				A182465C2CEBAFB800C49673 /* rhinoSdkDimRadius.h */,
+				A182465D2CEBAFB800C49673 /* rhinoSdkDimStyle.h */,
+				A182465E2CEBAFB800C49673 /* RhinoSdkDimStyleComboBox.h */,
+				A182465F2CEBAFB800C49673 /* RhinoSdkDirectoryManager.h */,
+				A18246602CEBAFB800C49673 /* RhinoSdkDisplay.h */,
+				A18246612CEBAFB800C49673 /* RhinoSdkDisplayAttrsMgr.h */,
+				A18246622CEBAFB800C49673 /* RhinoSdkDisplayConduit.h */,
+				A18246632CEBAFB800C49673 /* RhinoSdkDisplayEngine_GDI.h */,
+				A18246642CEBAFB800C49673 /* RhinoSdkDisplayEngine_OGL.h */,
+				A18246652CEBAFB800C49673 /* RhinoSdkDisplayEngine.h */,
+				A18246662CEBAFB800C49673 /* rhinoSdkDisplayEngineAttributes.h */,
+				A18246672CEBAFB800C49673 /* RhinoSdkDisplayPipeline_GDI.h */,
+				A18246682CEBAFB800C49673 /* RhinoSdkDisplayPipeline_OGL.h */,
+				A18246692CEBAFB800C49673 /* RhinoSdkDisplayPipeline.h */,
+				A182466A2CEBAFB800C49673 /* rhinoSdkDisplayPipelineAttributes.h */,
+				A182466B2CEBAFB800C49673 /* rhinoSdkDisplayPipelineMaterial.h */,
+				A182466C2CEBAFB800C49673 /* rhinoSdkDoc.h */,
+				A182466D2CEBAFB800C49673 /* rhinoSdkDocProperties.h */,
+				A182466E2CEBAFB800C49673 /* RhinoSdkDpi.h */,
+				A182466F2CEBAFB800C49673 /* rhinoSdkDraw.h */,
+				A18246702CEBAFB800C49673 /* RhinoSdkDropTargetManager.h */,
+				A18246712CEBAFB800C49673 /* rhinoSdkEventWatcher.h */,
+				A18246722CEBAFB800C49673 /* rhinoSdkExtrude.h */,
+				A18246732CEBAFB800C49673 /* rhinoSdkExtrusionObject.h */,
+				A18246742CEBAFB800C49673 /* rhinoSdkFair.h */,
+				A18246752CEBAFB800C49673 /* rhinoSdkFileMenu.h */,
+				A18246762CEBAFB800C49673 /* rhinoSdkFileOptions.h */,
+				A18246772CEBAFB800C49673 /* rhinoSdkFileUtilities.h */,
+				A18246782CEBAFB800C49673 /* RhinoSdkFitPatch.h */,
+				A18246792CEBAFB800C49673 /* rhinoSdkFont.h */,
+				A182467A2CEBAFB800C49673 /* rhinoSdkGet.h */,
+				A182467B2CEBAFB800C49673 /* rhinoSdkGetAngle.h */,
+				A182467C2CEBAFB800C49673 /* rhinoSdkGetAnnotationLeader.h */,
+				A182467D2CEBAFB800C49673 /* rhinoSdkGetArc.h */,
+				A182467E2CEBAFB800C49673 /* rhinoSdkGetCircle.h */,
+				A182467F2CEBAFB800C49673 /* rhinoSdkGetCone.h */,
+				A18246802CEBAFB800C49673 /* rhinoSdkGetCurve.h */,
+				A18246812CEBAFB800C49673 /* rhinoSdkGetCylinder.h */,
+				A18246822CEBAFB800C49673 /* rhinoSdkGetDirection.h */,
+				A18246832CEBAFB800C49673 /* rhinoSdkGetDistance.h */,
+				A18246842CEBAFB800C49673 /* rhinoSdkGetEllipse.h */,
+				A18246852CEBAFB800C49673 /* rhinoSdkGetFileDialog.h */,
+				A18246862CEBAFB800C49673 /* rhinoSdkGetFrame.h */,
+				A18246872CEBAFB800C49673 /* rhinoSdkGetLine.h */,
+				A18246882CEBAFB800C49673 /* rhinoSdkGetObject.h */,
+				A18246892CEBAFB800C49673 /* rhinoSdkGetParabola.h */,
+				A182468A2CEBAFB800C49673 /* rhinoSdkGetPlane.h */,
+				A182468B2CEBAFB800C49673 /* rhinoSdkGetPoint.h */,
+				A182468C2CEBAFB800C49673 /* rhinoSdkGetPolygon.h */,
+				A182468D2CEBAFB800C49673 /* rhinoSdkGetRectangle.h */,
+				A182468E2CEBAFB800C49673 /* rhinoSdkGetRevolve.h */,
+				A182468F2CEBAFB800C49673 /* rhinoSdkGetSphere.h */,
+				A18246902CEBAFB800C49673 /* rhinoSdkGetSpiral.h */,
+				A18246912CEBAFB800C49673 /* rhinoSdkGetString.h */,
+				A18246922CEBAFB800C49673 /* rhinoSdkGetSubCurve.h */,
+				A18246932CEBAFB800C49673 /* rhinoSdkGetText.h */,
+				A18246942CEBAFB800C49673 /* rhinoSdkGetTorus.h */,
+				A18246952CEBAFB800C49673 /* rhinoSdkGetView.h */,
+				A18246962CEBAFB800C49673 /* rhinoSdkGetXform.h */,
+				A18246972CEBAFB800C49673 /* rhinoSdkGrips.h */,
+				A18246982CEBAFB800C49673 /* rhinoSdkGroup.h */,
+				A18246992CEBAFB800C49673 /* rhinoSdkGroupObject.h */,
+				A182469A2CEBAFB800C49673 /* rhinoSdkGumball.h */,
+				A182469B2CEBAFB800C49673 /* rhinoSdkHatchObject.h */,
+				A182469C2CEBAFB800C49673 /* rhinoSdkHatchPattern.h */,
+				A182469D2CEBAFB800C49673 /* RhinoSdkHistoryRecordTable.h */,
+				A182469E2CEBAFB800C49673 /* rhinoSdkInstance.h */,
+				A182469F2CEBAFB800C49673 /* RhinoSdkIntersect.h */,
+				A18246A02CEBAFB800C49673 /* rhinoSdkLayer.h */,
+				A18246A12CEBAFB800C49673 /* rhinoSdkLayerComboBox.h */,
+				A18246A22CEBAFB800C49673 /* RhinoSdkLeader.h */,
+				A18246A32CEBAFB800C49673 /* rhinoSdkLight.h */,
+				A18246A42CEBAFB800C49673 /* rhinoSdkLinetype.h */,
+				A18246A52CEBAFB800C49673 /* rhinoSdkLoft.h */,
+				A18246A62CEBAFB800C49673 /* RhinoSdkMacRhinoApp.h */,
+				A18246A72CEBAFB800C49673 /* rhinoSdkMacTypes.h */,
+				A18246A82CEBAFB800C49673 /* RhinoSdkMacUiProfileContext.h */,
+				A18246A92CEBAFB800C49673 /* RhinoSdkMatch.h */,
+				A18246AA2CEBAFB800C49673 /* RhinoSdkMatchCurve.h */,
+				A18246AB2CEBAFB800C49673 /* rhinoSdkMaterial.h */,
+				A18246AC2CEBAFB800C49673 /* rhinoSdkMeshObject.h */,
+				A18246AD2CEBAFB800C49673 /* rhinoSdkMeshUtilities.h */,
+				A18246AE2CEBAFB800C49673 /* rhinoSdkMouse.h */,
+				A18246AF2CEBAFB800C49673 /* rhinoSdkObject.h */,
+				A18246B02CEBAFB800C49673 /* rhinoSdkObjectAttributes.h */,
+				A18246B12CEBAFB800C49673 /* RhinoSdkObjectColorComboBox.h */,
+				A18246B22CEBAFB800C49673 /* rhinoSdkObjectHistory.h */,
+				A18246B32CEBAFB800C49673 /* RhinoSdkObjectPropertiesDialogPage.h */,
+				A18246B42CEBAFB800C49673 /* RhinoSdkObjectPropertiesModlessDockingDialog.h */,
+				A18246B52CEBAFB800C49673 /* rhinoSDKOffsetCrvOnSrf.h */,
+				A18246B62CEBAFB800C49673 /* RhinoSdkOptionsDialogPage.h */,
+				A18246B72CEBAFB800C49673 /* RhinoSdkPageLayoutView.h */,
+				A18246B82CEBAFB800C49673 /* RhinoSdkPages.h */,
+				A18246B92CEBAFB800C49673 /* RhinoSdkPersistentSettings.h */,
+				A18246BA2CEBAFB800C49673 /* rhinoSdkPick.h */,
+				A18246BB2CEBAFB800C49673 /* RhinoSdkPlotColorComboBox.h */,
+				A18246BC2CEBAFB800C49673 /* rhinoSdkPlugIn.h */,
+				A18246BD2CEBAFB800C49673 /* rhinoSdkPlugInDeclare.h */,
+				A18246BE2CEBAFB800C49673 /* rhinoSdkPlugInLinkingPragmas.h */,
+				A18246BF2CEBAFB800C49673 /* RhinoSdkPlugInManager.h */,
+				A18246C02CEBAFB800C49673 /* rhinoSdkPointObject.h */,
+				A18246C12CEBAFB800C49673 /* rhinoSdkPolyEdge.h */,
+				A18246C22CEBAFB800C49673 /* rhinoSdkPrintDialog.h */,
+				A18246C32CEBAFB800C49673 /* rhinoSdkPrintInfo.h */,
+				A18246C42CEBAFB800C49673 /* RhinoSdkPropertiesPages.h */,
+				A18246C52CEBAFB800C49673 /* RhinoSdkRender.h */,
+				A18246C62CEBAFB800C49673 /* RhinoSdkRenderFrame.h */,
+				A18246C72CEBAFB800C49673 /* RhinoSdkRenderIncludes.h */,
+				A18246C82CEBAFB800C49673 /* RhinoSdkRenderOverlays.h */,
+				A18246C92CEBAFB800C49673 /* rhinoSdkRenderPlugIn.h */,
+				A18246CA2CEBAFB800C49673 /* RhinoSdkRenderUtils.h */,
+				A18246CB2CEBAFB800C49673 /* RhinoSdkRenderViewWnd.h */,
+				A18246CC2CEBAFB800C49673 /* rhinoSdkRhinoVersion.h */,
+				A18246CD2CEBAFB800C49673 /* RhinoSdkRichText.h */,
+				A18246CE2CEBAFB800C49673 /* rhinoSdkSkinDll.h */,
+				A18246CF2CEBAFB800C49673 /* rhinoSdkSnap.h */,
+				A18246D02CEBAFB800C49673 /* rhinoSdkSnapshots.h */,
+				A18246D12CEBAFB800C49673 /* RhinoSdkSpaceMorph.h */,
+				A18246D22CEBAFB800C49673 /* rhinoSdkStackedDialogPage.h */,
+				A18246D32CEBAFB800C49673 /* rhinoSdkStdafxPreamble.h */,
+				A18246D42CEBAFB800C49673 /* RhinoSdkSubD.h */,
+				A18246D52CEBAFB800C49673 /* rhinoSdkSweep.h */,
+				A18246D62CEBAFB800C49673 /* rhinoSdkSystemDialogOptions.h */,
+				A18246D72CEBAFB800C49673 /* RhinoSdkTextOut.h */,
+				A18246D82CEBAFB800C49673 /* rhinoSdkTextStyleManager.h */,
+				A18246D92CEBAFB800C49673 /* rhinoSdkTexture.h */,
+				A18246DA2CEBAFB800C49673 /* rhinoSdkTMacPages.h */,
+				A18246DB2CEBAFB800C49673 /* rhinoSdkTMfcPages.h */,
+				A18246DC2CEBAFB800C49673 /* rhinoSdkTPages.h */,
+				A18246DD2CEBAFB800C49673 /* RhinoSdkUiAutocomplete.h */,
+				A18246DE2CEBAFB800C49673 /* RhinoSdkUiBitmapButton.h */,
+				A18246DF2CEBAFB800C49673 /* RhinoSdkUiBlockPreview.h */,
+				A18246E02CEBAFB800C49673 /* RhinoSdkUiButton.h */,
+				A18246E12CEBAFB800C49673 /* RhinoSdkUiCheckBox.h */,
+				A18246E22CEBAFB800C49673 /* RhinoSdkUiCheckListBox.h */,
+				A18246E32CEBAFB800C49673 /* RhinoSdkUiColorButton.h */,
+				A18246E42CEBAFB800C49673 /* RhinoSdkUiColorComboBox.h */,
+				A18246E52CEBAFB800C49673 /* RhinoSdkUiColorListBox.h */,
+				A18246E62CEBAFB800C49673 /* RhinoSdkUiComboBox.h */,
+				A18246E72CEBAFB800C49673 /* RhinoSdkUiDHtmlDialog.h */,
+				A18246E82CEBAFB800C49673 /* RhinoSdkUiDialog.h */,
+				A18246E92CEBAFB800C49673 /* RhinoSdkUiDialogItemResizer.h */,
+				A18246EA2CEBAFB800C49673 /* RhinoSdkUiDibMac.h */,
+				A18246EB2CEBAFB800C49673 /* RhinoSdkUiDirDialog.h */,
+				A18246EC2CEBAFB800C49673 /* RhinoSdkUiDockBar.h */,
+				A18246ED2CEBAFB800C49673 /* RhinoSdkUiDockBarCaptionButton.h */,
+				A18246EE2CEBAFB800C49673 /* RhinoSdkUiDockBarClientWnd.h */,
+				A18246EF2CEBAFB800C49673 /* RhinoSdkUiDockBarDialog.h */,
+				A18246F02CEBAFB800C49673 /* RhinoSdkUiDockBarExpandableTabCtrl.h */,
+				A18246F12CEBAFB800C49673 /* RhinoSdkUiDockBarManager.h */,
+				A18246F22CEBAFB800C49673 /* RhinoSdkUiDockbarTab.h */,
+				A18246F32CEBAFB800C49673 /* RhinoSdkUiDragBitmapWnd.h */,
+				A18246F42CEBAFB800C49673 /* RhinoSdkUiEdit.h */,
+				A18246F52CEBAFB800C49673 /* RhinoSdkUiEditInt.h */,
+				A18246F62CEBAFB800C49673 /* RhinoSdkUiEditReal.h */,
+				A18246F72CEBAFB800C49673 /* RhinoSdkUiExpandableTabbedDockBar.h */,
+				A18246F82CEBAFB800C49673 /* RhinoSdkUiExpandableTabCtrl.h */,
+				A18246F92CEBAFB800C49673 /* RhinoSdkUiExpandableTabPage.h */,
+				A18246FA2CEBAFB800C49673 /* RhinoSdkUiFile.h */,
+				A18246FB2CEBAFB800C49673 /* RhinoSdkUiFileDialog.h */,
+				A18246FC2CEBAFB800C49673 /* RhinoSdkUiGradientSliderCtrl.h */,
+				A18246FD2CEBAFB800C49673 /* RhinoSdkUiGridListCombo.h */,
+				A18246FE2CEBAFB800C49673 /* RhinoSdkUiGridListCtrl.h */,
+				A18246FF2CEBAFB800C49673 /* RhinoSdkUiGridListEdit.h */,
+				A18247002CEBAFB800C49673 /* RhinoSdkUiGridListHeaderCtrl.h */,
+				A18247012CEBAFB800C49673 /* RhinoSdkUiHyperLink.h */,
+				A18247022CEBAFB800C49673 /* RhinoSdkUiImageList.h */,
+				A18247032CEBAFB800C49673 /* RhinoSdkUiIncludes.h */,
+				A18247042CEBAFB800C49673 /* RhinoSdkUiInPlaceCtrls.h */,
+				A18247052CEBAFB800C49673 /* RhinoSdkUiLayerComboBox.h */,
+				A18247062CEBAFB800C49673 /* rhinoSdkUiLayerListCtrl.h */,
+				A18247072CEBAFB800C49673 /* RhinoSdkUiLibManagers.h */,
+				A18247082CEBAFB800C49673 /* RhinoSdkUiLineTypeListCtrl.h */,
+				A18247092CEBAFB800C49673 /* RhinoSdkUiListBoxEx.h */,
+				A182470A2CEBAFB800C49673 /* RhinoSdkUiManager.h */,
+				A182470B2CEBAFB800C49673 /* RhinoSdkUiMemDC.h */,
+				A182470C2CEBAFB800C49673 /* RhinoSdkUiMessagePump.h */,
+				A182470D2CEBAFB800C49673 /* RhinoSdkUiMultiMonitor.h */,
+				A182470E2CEBAFB800C49673 /* RhinoSdkUiOptionsListCtrl.h */,
+				A182470F2CEBAFB800C49673 /* RhinoSdkUiOptionsListCtrlItem.h */,
+				A18247102CEBAFB800C49673 /* RhinoSdkUiPageDockBarManager.h */,
+				A18247112CEBAFB800C49673 /* RhinoSdkUiPointEdit.h */,
+				A18247122CEBAFB800C49673 /* RhinoSdkUiPopUpListWnd.h */,
+				A18247132CEBAFB800C49673 /* RhinoSdkUiPopUpMenu.h */,
+				A18247142CEBAFB800C49673 /* RhinoSdkUiPopuUpListBox.h */,
+				A18247152CEBAFB800C49673 /* RhinoSdkUiPrintWidthListCtrl.h */,
+				A18247162CEBAFB800C49673 /* rhinoSdkUiProfileContext.h */,
+				A18247172CEBAFB800C49673 /* RhinoSdkUiProfileContextIterator.h */,
+				A18247182CEBAFB800C49673 /* RhinoSdkUiProgressBar.h */,
+				A18247192CEBAFB800C49673 /* RhinoSdkUiProgressCtrl.h */,
+				A182471A2CEBAFB800C49673 /* RhinoSdkUiRegistry.h */,
+				A182471B2CEBAFB800C49673 /* RhinoSdkUiResourceManager.h */,
+				A182471C2CEBAFB800C49673 /* RhinoSdkUiRichEditCtrl.h */,
+				A182471D2CEBAFB800C49673 /* RhinoSdkUiRmaPort.h */,
+				A182471E2CEBAFB800C49673 /* RhinoSdkUiSeparator.h */,
+				A182471F2CEBAFB800C49673 /* RhinoSdkUiSliderCtrl.h */,
+				A18247202CEBAFB800C49673 /* RhinoSdkUiStatic.h */,
+				A18247212CEBAFB800C49673 /* RhinoSdkUiTabbedSheetCtrl.h */,
+				A18247222CEBAFB800C49673 /* RhinoSdkUiTabCtrl.h */,
+				A18247232CEBAFB800C49673 /* RhinoSdkUiTabCtrlPage.h */,
+				A18247242CEBAFB800C49673 /* rhinoSdkUiTabPageCtrl.h */,
+				A18247252CEBAFB800C49673 /* RhinoSdkUiThemeDraw.h */,
+				A18247262CEBAFB800C49673 /* RhinoSdkUiToolTip.h */,
+				A18247272CEBAFB800C49673 /* RhinoSdkUiUtilities.h */,
+				A18247282CEBAFB800C49673 /* RhinoSdkUiWindowsPaintManager.h */,
+				A18247292CEBAFB800C49673 /* RhinoSdkUiXML.h */,
+				A182472A2CEBAFB800C49673 /* rhinoSdkUnrollSrf.h */,
+				A182472B2CEBAFB800C49673 /* rhinoSdkUtilities.h */,
+				A182472C2CEBAFB800C49673 /* rhinoSdkVersion.h */,
+				A182472D2CEBAFB800C49673 /* rhinoSdkView.h */,
+				A182472E2CEBAFB800C49673 /* rhinoSdkViewport.h */,
+				A182472F2CEBAFB800C49673 /* rhinoSdkWidget.h */,
+				A18247302CEBAFB800C49673 /* rhinoSdkWindowsVersion.h */,
+				A18247312CEBAFB800C49673 /* rhinoSdkWindowsVersionValidation.h */,
+				A18247322CEBAFB800C49673 /* RhinoSdkWorkerThread.h */,
+				A18247332CEBAFB800C49673 /* rhinoSdkWorkSession.h */,
+				A18247342CEBAFB800C49673 /* RhinoSdkYesNoResponse.h */,
+				A18247352CEBAFB800C49673 /* rhinoSdPropertiesPanelPageEventWatcher.h */,
+				A18247362CEBAFB800C49673 /* RhinoSkdUiFontComboBox.h */,
+				A18247372CEBAFB800C49673 /* RhRdk_RCE_Queue.h */,
+				A18247382CEBAFB800C49673 /* RhRdk_RCE_Queue2.h */,
+				A18247392CEBAFB800C49673 /* RhRdk_RDP_DisplayPipeline.h */,
+				A182473A2CEBAFB800C49673 /* RhRdkAction.h */,
+				A182473B2CEBAFB800C49673 /* RhRdkAngleCtrl.h */,
+				A182473C2CEBAFB800C49673 /* RhRdkAutomaticUI.h */,
+				A182473D2CEBAFB800C49673 /* RhRdkBasicEnvironmentCCI.h */,
+				A182473E2CEBAFB800C49673 /* RhRdkBasicMaterial.h */,
+				A182473F2CEBAFB800C49673 /* RhRdkBasicMaterialCCI.h */,
+				A18247402CEBAFB800C49673 /* RhRdkCity.h */,
+				A18247412CEBAFB800C49673 /* RhRdkColor.h */,
+				A18247422CEBAFB800C49673 /* RhRdkColorButton.h */,
+				A18247432CEBAFB800C49673 /* RhRdkCompoundContentImplementor.h */,
+				A18247442CEBAFB800C49673 /* RhRdkContent.h */,
+				A18247452CEBAFB800C49673 /* RhRdkContentCreator.h */,
+				A18247462CEBAFB800C49673 /* RhRdkContentCtrl.h */,
+				A18247472CEBAFB800C49673 /* RhRdkContentCtrlBase.h */,
+				A18247482CEBAFB800C49673 /* RhRdkContentEditorCustomButtonProvider.h */,
+				A18247492CEBAFB800C49673 /* RhRdkContentFactory.h */,
+				A182474A2CEBAFB800C49673 /* RhRdkContentField.h */,
+				A182474B2CEBAFB800C49673 /* RhRdkContentIOPlugIn.h */,
+				A182474C2CEBAFB800C49673 /* RhRdkContentKindList.h */,
+				A182474D2CEBAFB800C49673 /* RhRdkContentKinds.h */,
+				A182474E2CEBAFB800C49673 /* RhRdkContentUndo.h */,
+				A182474F2CEBAFB800C49673 /* RhRdkCoreContent.h */,
+				A18247502CEBAFB800C49673 /* RhRdkCoreDialogs.h */,
+				A18247512CEBAFB800C49673 /* RhRdkCurveGraph.h */,
+				A18247522CEBAFB800C49673 /* RhRdkDataSource.h */,
+				A18247532CEBAFB800C49673 /* RhRdkDefinitions.h */,
+				A18247542CEBAFB800C49673 /* RhRdkDeprecated.h */,
+				A18247552CEBAFB800C49673 /* RhRdkDocument.h */,
+				A18247562CEBAFB800C49673 /* RhRdkEnvironment.h */,
+				A18247572CEBAFB800C49673 /* RhRdkEnvironmentFactory.h */,
+				A18247582CEBAFB800C49673 /* RhRdkEventSink.h */,
+				A18247592CEBAFB800C49673 /* RhRdkEventWatcher.h */,
+				A182475A2CEBAFB800C49673 /* RhRdkExtension.h */,
+				A182475B2CEBAFB800C49673 /* RhRdkExtraRequirements.h */,
+				A182475C2CEBAFB800C49673 /* RhRdkFieldStrings.h */,
+				A182475D2CEBAFB800C49673 /* RhRdkFileDialogFilter.h */,
+				A182475E2CEBAFB800C49673 /* RhRdkGraphCtrl.h */,
+				A182475F2CEBAFB800C49673 /* RhRdkGroundPlaneSettings.h */,
+				A18247602CEBAFB800C49673 /* RhRdkHeaders.h */,
+				A18247612CEBAFB800C49673 /* RhRdkIORContextMenu.h */,
+				A18247622CEBAFB800C49673 /* RhRdkIORManager.h */,
+				A18247632CEBAFB800C49673 /* RhRdkLightManagerSupport.h */,
+				A18247642CEBAFB800C49673 /* RhRdkLinearWorkflow.h */,
+				A18247652CEBAFB800C49673 /* RhRdkMarkedObjects.h */,
+				A18247662CEBAFB800C49673 /* RhRdkMaterial.h */,
+				A18247672CEBAFB800C49673 /* RhRdkMaterialFactory.h */,
+				A18247682CEBAFB800C49673 /* RhRdkModalizer.h */,
+				A18247692CEBAFB800C49673 /* RhRdkNewContentCtrl.h */,
+				A182476A2CEBAFB800C49673 /* RhRdkNewPostEffectPlugIn.h */,
+				A182476B2CEBAFB800C49673 /* RhRdkObject.h */,
+				A182476C2CEBAFB800C49673 /* RhRdkObjectDataAccess.h */,
+				A182476D2CEBAFB800C49673 /* RhRdkPlugIn.h */,
+				A182476E2CEBAFB800C49673 /* RhRdkPostEffectPlugIn.h */,
+				A182476F2CEBAFB800C49673 /* RhRdkPostEffectPlugInFactory.h */,
+				A18247702CEBAFB800C49673 /* RhRdkPostEffectPlugInManager.h */,
+				A18247712CEBAFB800C49673 /* RhRdkRendererSupportOptions.h */,
+				A18247722CEBAFB800C49673 /* RhRdkRenderingSettings.h */,
+				A18247732CEBAFB800C49673 /* RhRdkRenderPlugInIterator.h */,
+				A18247742CEBAFB800C49673 /* RhRdkRenderQuality.h */,
+				A18247752CEBAFB800C49673 /* RhRdkRenderSettings.h */,
+				A18247762CEBAFB800C49673 /* RhRdkRenderWindowEventSink.h */,
+				A18247772CEBAFB800C49673 /* RhRdkResizingDialog.h */,
+				A18247782CEBAFB800C49673 /* RhRdkSdkNumberEdit.h */,
+				A18247792CEBAFB800C49673 /* RhRdkSdkRender.h */,
+				A182477A2CEBAFB800C49673 /* RhRdkSections_MFC.h */,
+				A182477B2CEBAFB800C49673 /* RhRdkSimulatedTexture.h */,
+				A182477C2CEBAFB800C49673 /* RhRdkStorageStrings.h */,
+				A182477D2CEBAFB800C49673 /* RhRdkSubNodeCtrl.h */,
+				A182477E2CEBAFB800C49673 /* RhRdkSun.h */,
+				A182477F2CEBAFB800C49673 /* RhRdkSunStorage.h */,
+				A18247802CEBAFB800C49673 /* RhRdkTask.h */,
+				A18247812CEBAFB800C49673 /* RhRdkTaskOrigin.h */,
+				A18247822CEBAFB800C49673 /* RhRdkTexture.h */,
+				A18247832CEBAFB800C49673 /* RhRdkTextureCache.h */,
+				A18247842CEBAFB800C49673 /* RhRdkTextureFactory.h */,
+				A18247852CEBAFB800C49673 /* RhRdkTimeZone.h */,
+				A18247862CEBAFB800C49673 /* RhRdkToneMappers.h */,
+				A18247872CEBAFB800C49673 /* RhRdkTwoColorTextureBase.h */,
+				A18247882CEBAFB800C49673 /* RhRdkTypes.h */,
+				A18247892CEBAFB800C49673 /* RhRdkUiSdk.h */,
+				A182478A2CEBAFB800C49673 /* RhRdkUuid.h */,
+				A182478B2CEBAFB800C49673 /* RhRdkUuidCollection.h */,
+				A182478C2CEBAFB800C49673 /* RhRdkUuids.h */,
+				A182478D2CEBAFB800C49673 /* RhRdkVariant.h */,
+				A182478E2CEBAFB800C49673 /* RmaSdkUiDHtmlDialog.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		A18247932CEBAFB800C49673 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A18247902CEBAFB800C49673 /* OpenNURBS */,
+				A18247912CEBAFB800C49673 /* RhCore */,
+				A18247922CEBAFB800C49673 /* RhMaterialEditor */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A182479E2CEBAFB800C49673 /* zlib */ = {
+			isa = PBXGroup;
+			children = (
+				A18247942CEBAFB800C49673 /* crc32.h */,
+				A18247952CEBAFB800C49673 /* deflate.h */,
+				A18247962CEBAFB800C49673 /* inffast.h */,
+				A18247972CEBAFB800C49673 /* inffixed.h */,
+				A18247982CEBAFB800C49673 /* inflate.h */,
+				A18247992CEBAFB800C49673 /* inftrees.h */,
+				A182479A2CEBAFB800C49673 /* trees.h */,
+				A182479B2CEBAFB800C49673 /* zconf.h */,
+				A182479C2CEBAFB800C49673 /* zlib.h */,
+				A182479D2CEBAFB800C49673 /* zutil.h */,
+			);
+			path = zlib;
+			sourceTree = "<group>";
+		};
+		A182486B2CEBAFB800C49673 /* openNURBS */ = {
+			isa = PBXGroup;
+			children = (
+				A182479E2CEBAFB800C49673 /* zlib */,
+				A182479F2CEBAFB800C49673 /* examples_linking_pragmas.h */,
+				A18247A02CEBAFB800C49673 /* examples.h */,
+				A18247A12CEBAFB800C49673 /* opennurbs_3dm_attributes.h */,
+				A18247A22CEBAFB800C49673 /* opennurbs_3dm_properties.h */,
+				A18247A32CEBAFB800C49673 /* opennurbs_3dm_settings.h */,
+				A18247A42CEBAFB800C49673 /* opennurbs_3dm.h */,
+				A18247A52CEBAFB800C49673 /* opennurbs_annotationbase.h */,
+				A18247A62CEBAFB800C49673 /* opennurbs_apple_nsfont.h */,
+				A18247A72CEBAFB800C49673 /* opennurbs_arc.h */,
+				A18247A82CEBAFB800C49673 /* opennurbs_arccurve.h */,
+				A18247A92CEBAFB800C49673 /* opennurbs_archivable_dictionary.h */,
+				A18247AA2CEBAFB800C49673 /* opennurbs_archive.h */,
+				A18247AB2CEBAFB800C49673 /* opennurbs_array_defs.h */,
+				A18247AC2CEBAFB800C49673 /* opennurbs_array.h */,
+				A18247AD2CEBAFB800C49673 /* opennurbs_base32.h */,
+				A18247AE2CEBAFB800C49673 /* opennurbs_base64.h */,
+				A18247AF2CEBAFB800C49673 /* opennurbs_beam.h */,
+				A18247B02CEBAFB800C49673 /* opennurbs_bezier.h */,
+				A18247B12CEBAFB800C49673 /* opennurbs_bitmap.h */,
+				A18247B22CEBAFB800C49673 /* opennurbs_bounding_box.h */,
+				A18247B32CEBAFB800C49673 /* opennurbs_box.h */,
+				A18247B42CEBAFB800C49673 /* opennurbs_brep.h */,
+				A18247B52CEBAFB800C49673 /* opennurbs_circle.h */,
+				A18247B62CEBAFB800C49673 /* opennurbs_color.h */,
+				A18247B72CEBAFB800C49673 /* opennurbs_compress.h */,
+				A18247B82CEBAFB800C49673 /* opennurbs_compstat.h */,
+				A18247B92CEBAFB800C49673 /* opennurbs_cone.h */,
+				A18247BA2CEBAFB800C49673 /* opennurbs_convex_poly.h */,
+				A18247BB2CEBAFB800C49673 /* opennurbs_cpp_base.h */,
+				A18247BC2CEBAFB800C49673 /* opennurbs_crc.h */,
+				A18247BD2CEBAFB800C49673 /* opennurbs_current_environment.h */,
+				A18247BE2CEBAFB800C49673 /* opennurbs_curve.h */,
+				A18247BF2CEBAFB800C49673 /* opennurbs_curveonsurface.h */,
+				A18247C02CEBAFB800C49673 /* opennurbs_curveproxy.h */,
+				A18247C12CEBAFB800C49673 /* opennurbs_cylinder.h */,
+				A18247C22CEBAFB800C49673 /* opennurbs_date.h */,
+				A18247C32CEBAFB800C49673 /* opennurbs_decals.h */,
+				A18247C42CEBAFB800C49673 /* opennurbs_defines.h */,
+				A18247C52CEBAFB800C49673 /* opennurbs_detail.h */,
+				A18247C62CEBAFB800C49673 /* opennurbs_dimension.h */,
+				A18247C72CEBAFB800C49673 /* opennurbs_dimensionformat.h */,
+				A18247C82CEBAFB800C49673 /* opennurbs_dimensionstyle.h */,
+				A18247C92CEBAFB800C49673 /* opennurbs_dithering.h */,
+				A18247CA2CEBAFB800C49673 /* opennurbs_dll_resource.h */,
+				A18247CB2CEBAFB800C49673 /* opennurbs_ellipse.h */,
+				A18247CC2CEBAFB800C49673 /* opennurbs_embedded_file.h */,
+				A18247CD2CEBAFB800C49673 /* opennurbs_error.h */,
+				A18247CE2CEBAFB800C49673 /* opennurbs_evaluate_nurbs.h */,
+				A18247CF2CEBAFB800C49673 /* opennurbs_extensions.h */,
+				A18247D02CEBAFB800C49673 /* opennurbs_file_utilities.h */,
+				A18247D12CEBAFB800C49673 /* opennurbs_font.h */,
+				A18247D22CEBAFB800C49673 /* opennurbs_fpoint.h */,
+				A18247D32CEBAFB800C49673 /* opennurbs_freetype_include.h */,
+				A18247D42CEBAFB800C49673 /* opennurbs_freetype.h */,
+				A18247D52CEBAFB800C49673 /* opennurbs_fsp_defs.h */,
+				A18247D62CEBAFB800C49673 /* opennurbs_fsp.h */,
+				A18247D72CEBAFB800C49673 /* opennurbs_function_list.h */,
+				A18247D82CEBAFB800C49673 /* opennurbs_geometry.h */,
+				A18247D92CEBAFB800C49673 /* opennurbs_gl.h */,
+				A18247DA2CEBAFB800C49673 /* opennurbs_ground_plane.h */,
+				A18247DB2CEBAFB800C49673 /* opennurbs_group.h */,
+				A18247DC2CEBAFB800C49673 /* opennurbs_hash_table.h */,
+				A18247DD2CEBAFB800C49673 /* opennurbs_hatch.h */,
+				A18247DE2CEBAFB800C49673 /* opennurbs_hsort_template.h */,
+				A18247DF2CEBAFB800C49673 /* opennurbs_input_libsdir.h */,
+				A18247E02CEBAFB800C49673 /* opennurbs_instance.h */,
+				A18247E12CEBAFB800C49673 /* opennurbs_internal_defines.h */,
+				A18247E22CEBAFB800C49673 /* opennurbs_internal_glyph.h */,
+				A18247E32CEBAFB800C49673 /* opennurbs_internal_unicode_cp.h */,
+				A18247E42CEBAFB800C49673 /* opennurbs_internal_V2_annotation.h */,
+				A18247E52CEBAFB800C49673 /* opennurbs_internal_V5_annotation.h */,
+				A18247E62CEBAFB800C49673 /* opennurbs_internal_V5_dimstyle.h */,
+				A18247E72CEBAFB800C49673 /* opennurbs_intersect.h */,
+				A18247E82CEBAFB800C49673 /* opennurbs_ipoint.h */,
+				A18247E92CEBAFB800C49673 /* opennurbs_knot.h */,
+				A18247EA2CEBAFB800C49673 /* opennurbs_layer.h */,
+				A18247EB2CEBAFB800C49673 /* opennurbs_leader.h */,
+				A18247EC2CEBAFB800C49673 /* opennurbs_light.h */,
+				A18247ED2CEBAFB800C49673 /* opennurbs_line.h */,
+				A18247EE2CEBAFB800C49673 /* opennurbs_linear_workflow.h */,
+				A18247EF2CEBAFB800C49673 /* opennurbs_linecurve.h */,
+				A18247F02CEBAFB800C49673 /* opennurbs_linestyle.h */,
+				A18247F12CEBAFB800C49673 /* opennurbs_linetype.h */,
+				A18247F22CEBAFB800C49673 /* opennurbs_locale.h */,
+				A18247F32CEBAFB800C49673 /* opennurbs_lock.h */,
+				A18247F42CEBAFB800C49673 /* opennurbs_lookup.h */,
+				A18247F52CEBAFB800C49673 /* opennurbs_mapchan.h */,
+				A18247F62CEBAFB800C49673 /* opennurbs_material.h */,
+				A18247F72CEBAFB800C49673 /* opennurbs_math.h */,
+				A18247F82CEBAFB800C49673 /* opennurbs_matrix.h */,
+				A18247F92CEBAFB800C49673 /* opennurbs_md5.h */,
+				A18247FA2CEBAFB800C49673 /* opennurbs_memory.h */,
+				A18247FB2CEBAFB800C49673 /* opennurbs_mesh_modifiers.h */,
+				A18247FC2CEBAFB800C49673 /* opennurbs_mesh.h */,
+				A18247FD2CEBAFB800C49673 /* opennurbs_model_component.h */,
+				A18247FE2CEBAFB800C49673 /* opennurbs_model_geometry.h */,
+				A18247FF2CEBAFB800C49673 /* opennurbs_nurbscurve.h */,
+				A18248002CEBAFB800C49673 /* opennurbs_nurbssurface.h */,
+				A18248012CEBAFB800C49673 /* opennurbs_object_history.h */,
+				A18248022CEBAFB800C49673 /* opennurbs_object.h */,
+				A18248032CEBAFB800C49673 /* opennurbs_objref.h */,
+				A18248042CEBAFB800C49673 /* opennurbs_offsetsurface.h */,
+				A18248052CEBAFB800C49673 /* opennurbs_optimize.h */,
+				A18248062CEBAFB800C49673 /* opennurbs_parse.h */,
+				A18248072CEBAFB800C49673 /* opennurbs_photogrammetry.h */,
+				A18248082CEBAFB800C49673 /* opennurbs_plane.h */,
+				A18248092CEBAFB800C49673 /* opennurbs_planesurface.h */,
+				A182480A2CEBAFB800C49673 /* opennurbs_pluginlist.h */,
+				A182480B2CEBAFB800C49673 /* opennurbs_plus_crashtest.h */,
+				A182480C2CEBAFB800C49673 /* opennurbs_plus_function.h */,
+				A182480D2CEBAFB800C49673 /* opennurbs_plus_hiddenline.h */,
+				A182480E2CEBAFB800C49673 /* opennurbs_plus_idimage.h */,
+				A182480F2CEBAFB800C49673 /* opennurbs_plus_implicitfn.h */,
+				A18248102CEBAFB800C49673 /* opennurbs_plus_massprop.h */,
+				A18248112CEBAFB800C49673 /* opennurbs_plus_mesh_intersection.h */,
+				A18248122CEBAFB800C49673 /* opennurbs_plus_mesh_marker.h */,
+				A18248132CEBAFB800C49673 /* opennurbs_plus_particle.h */,
+				A18248142CEBAFB800C49673 /* opennurbs_plus_rectpack.h */,
+				A18248152CEBAFB800C49673 /* opennurbs_plus_rectpack2.h */,
+				A18248162CEBAFB800C49673 /* opennurbs_plus_registry.h */,
+				A18248172CEBAFB800C49673 /* opennurbs_plus_sections.h */,
+				A18248182CEBAFB800C49673 /* opennurbs_plus_sil.h */,
+				A18248192CEBAFB800C49673 /* opennurbs_plus_sleeplock.h */,
+				A182481A2CEBAFB800C49673 /* opennurbs_plus_squish.h */,
+				A182481B2CEBAFB800C49673 /* opennurbs_plus_subd.h */,
+				A182481C2CEBAFB800C49673 /* opennurbs_plus_testheader.h */,
+				A182481D2CEBAFB800C49673 /* opennurbs_plus_trimesh.h */,
+				A182481E2CEBAFB800C49673 /* opennurbs_plus_validate.h */,
+				A182481F2CEBAFB800C49673 /* opennurbs_plus_x.h */,
+				A18248202CEBAFB800C49673 /* opennurbs_plus.h */,
+				A18248212CEBAFB800C49673 /* opennurbs_point.h */,
+				A18248222CEBAFB800C49673 /* opennurbs_pointcloud.h */,
+				A18248232CEBAFB800C49673 /* opennurbs_pointgeometry.h */,
+				A18248242CEBAFB800C49673 /* opennurbs_pointgrid.h */,
+				A18248252CEBAFB800C49673 /* opennurbs_polycurve.h */,
+				A18248262CEBAFB800C49673 /* opennurbs_polyedgecurve.h */,
+				A18248272CEBAFB800C49673 /* opennurbs_polyline.h */,
+				A18248282CEBAFB800C49673 /* opennurbs_polylinecurve.h */,
+				A18248292CEBAFB800C49673 /* opennurbs_post_effects.h */,
+				A182482A2CEBAFB800C49673 /* opennurbs_private_wrap_defs.h */,
+				A182482B2CEBAFB800C49673 /* opennurbs_private_wrap.h */,
+				A182482C2CEBAFB800C49673 /* opennurbs_progress_reporter.h */,
+				A182482D2CEBAFB800C49673 /* opennurbs_public_examples.h */,
+				A182482E2CEBAFB800C49673 /* opennurbs_public_version.h */,
+				A182482F2CEBAFB800C49673 /* opennurbs_public.h */,
+				A18248302CEBAFB800C49673 /* opennurbs_qsort_template.h */,
+				A18248312CEBAFB800C49673 /* opennurbs_quacksort_template.h */,
+				A18248322CEBAFB800C49673 /* opennurbs_quaternion.h */,
+				A18248332CEBAFB800C49673 /* opennurbs_rand.h */,
+				A18248342CEBAFB800C49673 /* opennurbs_render_channels.h */,
+				A18248352CEBAFB800C49673 /* opennurbs_render_content.h */,
+				A18248362CEBAFB800C49673 /* opennurbs_render_settings_ex.h */,
+				A18248372CEBAFB800C49673 /* opennurbs_rendering.h */,
+				A18248382CEBAFB800C49673 /* opennurbs_revsurface.h */,
+				A18248392CEBAFB800C49673 /* opennurbs_rtree.h */,
+				A182483A2CEBAFB800C49673 /* opennurbs_safe_frame.h */,
+				A182483B2CEBAFB800C49673 /* opennurbs_sectionstyle.h */,
+				A182483C2CEBAFB800C49673 /* opennurbs_sha1.h */,
+				A182483D2CEBAFB800C49673 /* opennurbs_skylight.h */,
+				A182483E2CEBAFB800C49673 /* opennurbs_sleeplock.h */,
+				A182483F2CEBAFB800C49673 /* opennurbs_sphere.h */,
+				A18248402CEBAFB800C49673 /* opennurbs_std_string.h */,
+				A18248412CEBAFB800C49673 /* opennurbs_string_value.h */,
+				A18248422CEBAFB800C49673 /* opennurbs_string.h */,
+				A18248432CEBAFB800C49673 /* opennurbs_subd_data.h */,
+				A18248442CEBAFB800C49673 /* opennurbs_subd.h */,
+				A18248452CEBAFB800C49673 /* opennurbs_sumsurface.h */,
+				A18248462CEBAFB800C49673 /* opennurbs_sun.h */,
+				A18248472CEBAFB800C49673 /* opennurbs_surface.h */,
+				A18248482CEBAFB800C49673 /* opennurbs_surfaceproxy.h */,
+				A18248492CEBAFB800C49673 /* opennurbs_symmetry.h */,
+				A182484A2CEBAFB800C49673 /* opennurbs_system_compiler.h */,
+				A182484B2CEBAFB800C49673 /* opennurbs_system_runtime.h */,
+				A182484C2CEBAFB800C49673 /* opennurbs_system.h */,
+				A182484D2CEBAFB800C49673 /* opennurbs_table.h */,
+				A182484E2CEBAFB800C49673 /* opennurbs_terminator.h */,
+				A182484F2CEBAFB800C49673 /* opennurbs_testclass.h */,
+				A18248502CEBAFB800C49673 /* opennurbs_text_style.h */,
+				A18248512CEBAFB800C49673 /* opennurbs_text.h */,
+				A18248522CEBAFB800C49673 /* opennurbs_textcontext.h */,
+				A18248532CEBAFB800C49673 /* opennurbs_textdraw.h */,
+				A18248542CEBAFB800C49673 /* opennurbs_textglyph.h */,
+				A18248552CEBAFB800C49673 /* opennurbs_textiterator.h */,
+				A18248562CEBAFB800C49673 /* opennurbs_textlog.h */,
+				A18248572CEBAFB800C49673 /* opennurbs_textobject.h */,
+				A18248582CEBAFB800C49673 /* opennurbs_textrun.h */,
+				A18248592CEBAFB800C49673 /* opennurbs_texture_mapping.h */,
+				A182485A2CEBAFB800C49673 /* opennurbs_texture.h */,
+				A182485B2CEBAFB800C49673 /* opennurbs_topology.h */,
+				A182485C2CEBAFB800C49673 /* opennurbs_torus.h */,
+				A182485D2CEBAFB800C49673 /* opennurbs_unicode.h */,
+				A182485E2CEBAFB800C49673 /* opennurbs_userdata.h */,
+				A182485F2CEBAFB800C49673 /* opennurbs_uuid.h */,
+				A18248602CEBAFB800C49673 /* opennurbs_version_number.h */,
+				A18248612CEBAFB800C49673 /* opennurbs_version.h */,
+				A18248622CEBAFB800C49673 /* opennurbs_viewport.h */,
+				A18248632CEBAFB800C49673 /* opennurbs_win_dwrite.h */,
+				A18248642CEBAFB800C49673 /* opennurbs_windows_targetver.h */,
+				A18248652CEBAFB800C49673 /* opennurbs_wip.h */,
+				A18248662CEBAFB800C49673 /* opennurbs_workspace.h */,
+				A18248672CEBAFB800C49673 /* opennurbs_xform.h */,
+				A18248682CEBAFB800C49673 /* opennurbs_xml.h */,
+				A18248692CEBAFB800C49673 /* opennurbs_zlib.h */,
+				A182486A2CEBAFB800C49673 /* opennurbs.h */,
+			);
+			path = openNURBS;
+			sourceTree = "<group>";
+		};
+		A182486F2CEBAFB800C49673 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				A182478F2CEBAFB800C49673 /* inc */,
+				A18247932CEBAFB800C49673 /* lib */,
+				A182486B2CEBAFB800C49673 /* openNURBS */,
+				A182486C2CEBAFB800C49673 /* LICENSE.txt */,
+				A182486D2CEBAFB800C49673 /* rhino_wip.h */,
+				A182486E2CEBAFB800C49673 /* Version.h */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		A188FEF92CEB7073008BBC7D = {
+			isa = PBXGroup;
+			children = (
+				A182486F2CEBAFB800C49673 /* SDK */,
+				A188FF102CEB70BA008BBC7D /* XCConfig */,
+				A188FF0A2CEB70A5008BBC7D /* TestMacSDK.cpp */,
+				A188FF092CEB70A5008BBC7D /* TestMacSDK.h */,
+				A188FF032CEB7073008BBC7D /* Products */,
+				A188FF152CEB7123008BBC7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A188FF032CEB7073008BBC7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A188FF022CEB7073008BBC7D /* TestMacSDK.rhp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A188FF102CEB70BA008BBC7D /* XCConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A188FF222CEB739B008BBC7D /* Debug.xcconfig */,
+				A188FF202CEB7340008BBC7D /* PluginDebug.xcconfig */,
+				A188FF0C2CEB70BA008BBC7D /* Base.xcconfig */,
+				A188FF0D2CEB70BA008BBC7D /* Plugin.xcconfig */,
+				A188FF0E2CEB70BA008BBC7D /* PluginRelease.xcconfig */,
+				A188FF0F2CEB70BA008BBC7D /* Release.xcconfig */,
+			);
+			path = XCConfig;
+			sourceTree = "<group>";
+		};
+		A188FF152CEB7123008BBC7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A188FF182CEB7123008BBC7D /* OpenNURBS */,
+				A188FF172CEB7123008BBC7D /* RhCore */,
+				A188FF162CEB7123008BBC7D /* RhMaterialEditor */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A188FF012CEB7073008BBC7D /* TestMacSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A188FF062CEB7073008BBC7D /* Build configuration list for PBXNativeTarget "TestMacSDK" */;
+			buildPhases = (
+				A188FEFE2CEB7073008BBC7D /* Sources */,
+				A188FEFF2CEB7073008BBC7D /* Frameworks */,
+				A188FF002CEB7073008BBC7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMacSDK;
+			productName = TestMacSDK;
+			productReference = A188FF022CEB7073008BBC7D /* TestMacSDK.rhp */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A188FEFA2CEB7073008BBC7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A188FF012CEB7073008BBC7D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A188FEFD2CEB7073008BBC7D /* Build configuration list for PBXProject "TestMacSDK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A188FEF92CEB7073008BBC7D;
+			productRefGroup = A188FF032CEB7073008BBC7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A188FF012CEB7073008BBC7D /* TestMacSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A188FF002CEB7073008BBC7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A188FF212CEB7340008BBC7D /* PluginDebug.xcconfig in Resources */,
+				A188FF142CEB70BA008BBC7D /* Release.xcconfig in Resources */,
+				A188FF232CEB739C008BBC7D /* Debug.xcconfig in Resources */,
+				A188FF132CEB70BA008BBC7D /* PluginRelease.xcconfig in Resources */,
+				A188FF112CEB70BA008BBC7D /* Base.xcconfig in Resources */,
+				A188FF122CEB70BA008BBC7D /* Plugin.xcconfig in Resources */,
+				A18248732CEBAFB900C49673 /* LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A188FEFE2CEB7073008BBC7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A188FF0B2CEB70A5008BBC7D /* TestMacSDK.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A188FF042CEB7073008BBC7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A188FF202CEB7340008BBC7D /* PluginDebug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A188FF052CEB7073008BBC7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A188FF0E2CEB70BA008BBC7D /* PluginRelease.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A188FF072CEB7073008BBC7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V57JGAY59C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LBP.TestMacSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = rhp;
+			};
+			name = Debug;
+		};
+		A188FF082CEB7073008BBC7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V57JGAY59C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LBP.TestMacSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = rhp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A188FEFD2CEB7073008BBC7D /* Build configuration list for PBXProject "TestMacSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A188FF042CEB7073008BBC7D /* Debug */,
+				A188FF052CEB7073008BBC7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A188FF062CEB7073008BBC7D /* Build configuration list for PBXNativeTarget "TestMacSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A188FF072CEB7073008BBC7D /* Debug */,
+				A188FF082CEB7073008BBC7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A188FEFA2CEB7073008BBC7D /* Project object */;
+}
