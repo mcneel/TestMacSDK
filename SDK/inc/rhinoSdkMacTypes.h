@@ -103,6 +103,7 @@ typedef NSOpenGLContext* HGLRC;
 #endif
 
 class CWnd;
+class CDC;
 
 typedef void* LPDISPATCH;
 typedef void*    LPUNKNOWN;
@@ -116,7 +117,7 @@ typedef void*    HKEY;
 typedef void*    HMENU;
 typedef void*    MENUITEMINFO;
 typedef CWnd* HWND;
-typedef void* HDC;
+typedef CDC*  HDC;
 typedef void* HPEN;
 typedef void* HGLOBAL;
 typedef void* HHOOK;
