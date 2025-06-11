@@ -1315,6 +1315,7 @@
 				A188FEFE2CEB7073008BBC7D /* Sources */,
 				A188FEFF2CEB7073008BBC7D /* Frameworks */,
 				A188FF002CEB7073008BBC7D /* Resources */,
+				A1B6BE3A2DF9E68600AC438A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1373,6 +1374,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1B6BE3A2DF9E68600AC438A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Shell script to allow Rhino to be debugged for Rhino for Mac SDK plugins.\n\n#Get rid of any previous detritus\nunlink ~/rhino.entitlements\n\n#Extract the entitlements for RhinoWIP to an XML file\ncodesign --display --xml --entitlements ~/rhino.entitlements /Applications/RhinoWIP.app\n\nif grep -wq \"get-task-allow\" ~/rhino.entitlements; then \n\n    echo \"Rhino is already debuggable\"\n\nelse\n\n    #Replace a portion of the XML to inject the get-task-allow entitlement\n    sed -i.bak \"s%<key>com.apple.security.cs.allow-jit</key><true/>%<key>com.apple.security.cs.allow-jit</key><true/><key>com.apple.security.get-task-allow</key><true/>%\" ~/rhino.entitlements\n\n    #cat ~/rhino.entitlements\n\n    #Inject the modified entitlements into the RhinoApp bundle.\n    codesign -s - --deep --force --options=runtime --entitlements ~/rhino.entitlements /Applications/RhinoWIP.app\n\n    echo \"Rhino is now debuggable\"\n\nfi\n\n#Clean up the working file\nunlink ~/rhino.entitlements\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A188FEFE2CEB7073008BBC7D /* Sources */ = {
