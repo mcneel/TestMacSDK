@@ -4,7 +4,7 @@ This repository contains a complete working sample.
 
 To create your own plug-in from scratch, you will need to copy some files over from this project into yours, so you might want to clone this repo.
 
-# Creating the project
+## Creating the project
 
 You will need to create a “Bundle” project in Xcode.  The compiled bundle will become your RHP - but it is actually set of folders much like a package.
 
@@ -24,7 +24,7 @@ Under “Configurations” - further to the right.  Open the “Debug” configu
 
 Do the same for the release section - selecting PlugInRelease.xcconfig.
 
-# Adding the SDK headers and frameworks.
+## Adding the SDK headers and frameworks.
 
 Copy the SDK directory from the Sample Repo onto the same level as the XCConfig directory.  This includes a complete set of headers for Rhino 9 and the frameworks from an early build.  This may be updated.  A final set will be published before Rhino 9 release.
 
@@ -38,7 +38,7 @@ On the right, click “Frameworks and Libraries” and press the “+” button.
 
 Find the SDK folder in your bundle project, navigate to the “lib” folder and select the three frameworks inside (OpenNURBS, RhCore, RhMaterialEditor).  Click Open.  They should now appear as Frameworks.
 
-# Adding the source files.
+## Adding the source files.
 
 In XCode, select the name of your project in the Project Navigator (the leftmost bar), and choose New File from Template.
 
@@ -83,7 +83,7 @@ You are now ready to start setting up your boilerplate CRhinoPlugIn class in the
 
 
 
-# Compiling your plugin.
+## Compiling your plugin.
 
 
 Press the Go button.  Everything should compile.
@@ -96,7 +96,7 @@ Use the TestLoadPlugin command and select your compiled bundle.
 
 
 
-# Debugging your plug-in
+## Debugging your plug-in
 
 By default, Rhino cannot be debugged.  However, we have included a shell script make_rhino_debuggable.sh which you should run after you download Rhino to make the bundle debuggable.  Notice that the sample xcodeproj includes this script as a RunScript action meaning that you don't actually need to run the shell command.
 
