@@ -100,7 +100,7 @@ Use the TestLoadPlugin command and select your compiled bundle.
 
 By default, Rhino cannot be debugged.  However, we have included a shell script make_rhino_debuggable.sh which you should run after you download Rhino to make the bundle debuggable.  Notice that the sample xcodeproj includes this script as a RunScript action meaning that you don't actually need to run the shell command.
 
-Debugging Rhino is simply a matter of attaching to the Rhinoceros process once you are running.
+To run Rhino when you press the "Run" button in Xcode, Edit the Scheme to change the executable to RhinoWIP.app (from the applications folder).  Rhino will now start running in the debugger.  You can alteratively attach to the Rhino process once it is running.  In both cases, your breakpoints in your C++ plug-in code should be activated and hit.
 
 To run the shell script, open Terminal, navigate to the repo directory and type sh make_rhino_debuggable.sh
 
