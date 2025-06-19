@@ -2,12 +2,12 @@
 #First command-line arg should be full path to app bundle, e.g.: ./make_rhino_debuggable.sh ~/Desktop/RhinoWIP.app
 #Shell script to allow Rhino to be debugged for Rhino for Mac SDK plugins.
 
-TEMP_ENTITLEMENTS=$HOME/Desktop/rhino.entitlements
+TEMP_ENTITLEMENTS=$HOME/rhino.entitlements
 
 #Get rid of any previous detritus
 unlink $TEMP_ENTITLEMENTS
 
-#Extract the entitlements for RhinoWIP to an XML file
+#Extract the entitlements for app bundle to an XML file
 codesign --display --xml --entitlements $TEMP_ENTITLEMENTS $1
 
 if grep -wq "get-task-allow" $TEMP_ENTITLEMENTS; then 
@@ -18,12 +18,11 @@ else
 
 	#cat $TEMP_ENTITLEMENTS
 	
-	#Inject the modified entitlements into the RhinoApp bundle.
+	#Inject the modified entitlements into the app bundle.
 	codesign -s - --deep --force --options=runtime --entitlements $TEMP_ENTITLEMENTS $1
 
 	echo "Rhino is now debuggable"
-
 fi
 
-#Clean up the working file
+#Clean up the temporary working file
 unlink $TEMP_ENTITLEMENTS
