@@ -20,6 +20,8 @@ In XCode, select the name of your project in the Project Navigator (the leftmost
 
 In XCode, select the name of your project in the Project Navigator (the leftmost bar), and then select the name of your project under “PROJECT” slightly to the right (not TARGETS).
 
+Select the leftmost “Info” tab.
+
 Under “Configurations” - further to the right.  Open the “Debug” configuration drop down and Click where it says “None” on the first line under this. Select PlugInDebug.xcconfig.
 
 Do the same for the release section - selecting PlugInRelease.xcconfig.
@@ -33,6 +35,8 @@ You may want to add the SDK directory to the Project Navigator so you can easily
 In XCode, select the name of your project in the Project Navigator (the leftmost bar), and choose “Add files to MYPROJECT”.  Select the SDK folder and click “Add”  Keep the defaults and choose “Finish”.
 
 Now select the name of your Bundle under “TARGETS”.
+
+Select the leftmost “General” tab.
 
 On the right, click “Frameworks and Libraries” and press the “+” button.  On the following dialog, click “Add Other…” and choose “Add Files”
 
